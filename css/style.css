@@ -1,0 +1,142 @@
+body {
+  font-family: var(--f-montserrat);
+}
+
+
+/* GLOBAL VARIABLES CSS */
+:root {
+/* FONT FAMILY */
+  --f-montserrat: 'Montserrat', sans-serif;
+  --f-pt-sans: 'PT Sans', sans-serif;
+/* COLORS */
+  --color-grey: #FAFBFD;
+  --color-gold: #CEA45B;
+  --color-white: #ffffff;
+  --dark-blue: #1B2D43;
+/* FONT SIZE */
+  --font-base: 16px;
+  --font-md-1: 18px;
+  --font-md-2: 20px;
+  --font-md-3: 32px;
+  --font-md-4: 36px;
+  --font-md-5: 48px;
+  --font-lg: 64px;
+  --font-ex-lg: 96px;
+}
+
+/* FLEX PROPERTIES */
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER PROPERTIES */
+header {
+  background: url('../img/image_bg.png') 0 0 no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 900px;
+}
+
+.header-top-menu {
+  padding-top: 24px;
+}
+
+.header-nav {
+  margin-left: 48px;
+  font-family: var(--f-pt-sans);
+}
+
+.header-nav ul {
+  list-style: none;
+}
+
+.header-nav ul li {
+  margin-right: 24px;
+}
+
+.header-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  font-size: var(--font-base);
+}
+
+.header-lang-panel a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  font-size: var(--font-base);
+  margin-right: 16px;
+  font-family: var(--f-pt-sans);
+}
+
+.header-lang-panel a:last-child {
+  margin-right: 0;
+}
+
+.header-lang-panel a:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+  transition: all .4s;
+}
+
+.header-title-block {
+  color: var(--color-white);
+  font-weight: bold;
+  margin-top: 300px;
+}
+
+.header-title {
+  font-size: var(--font-ex-lg);
+  margin-bottom: 40px;
+}
+
+.header-title-text {
+  color: #D7E1EA;
+  font-size: var(--font-md-3);
+}
+
+/* ABOUT BLOCK STYLE */
+.about-us {
+  padding-top: 96px;
+  color: var(--dark-blue);
+}
+
+.about-us-title {
+  font-size: var(--font-lg);
+  font-weight: bold;
+}
+
+.about-us-text {
+
+}
+
+.line {
+  width: 96px;
+  height: 8px;
+  margin: 32px 0;
+  background:var(--color-gold);
+}
