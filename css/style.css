@@ -5,16 +5,17 @@ body {
 
 /* GLOBAL VARIABLES CSS */
 :root {
-/* FONT FAMILY */
+  /* FONT FAMILY */
   --f-montserrat: 'Montserrat', sans-serif;
   --f-pt-sans: 'PT Sans', sans-serif;
-/* COLORS */
+  /* COLORS */
   --color-grey: #FAFBFD;
   --color-light-grey: #F0F4F8;
   --color-gold: #CEA45B;
   --color-white: #ffffff;
   --dark-blue: #1B2D43;
-/* FONT SIZE */
+  --md-dark-blue: #35425B;
+  /* FONT SIZE */
   --font-base: 16px;
   --font-md-1: 18px;
   --font-md-2: 20px;
@@ -23,7 +24,7 @@ body {
   --font-md-5: 48px;
   --font-lg: 64px;
   --font-ex-lg: 96px;
-/* INDENTS */
+  /* INDENTS */
   --ml-1: 16px;
   --mr-2: 24px;
   --mb-6: 60px;
@@ -89,7 +90,7 @@ header {
   font-size: var(--font-base);
 }
 
-.header-lang-panel a{
+.header-lang-panel a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-grey);
@@ -105,6 +106,7 @@ header {
 .header-lang-panel a:hover {
   color: var(--color-gold);
   text-decoration: underline;
+  -webkit-transition: all .4s;
   transition: all .4s;
 }
 
@@ -150,7 +152,7 @@ header {
   width: 96px;
   height: 8px;
   margin: 32px 0;
-  background:var(--color-gold);
+  background: var(--color-gold);
 }
 
 .about-us-rightside,
@@ -166,8 +168,7 @@ header {
 
 .about-us-image {
   -webkit-box-shadow: inset 0px 0px 0px 6px rgba(240, 244, 248, 1);
-  -moz-box-shadow:    inset 0px 0px 0px 6px rgba(240, 244, 248, 1);
-  box-shadow:         inset 0px 0px 0px 6px rgba(240, 244, 248, 1);
+  box-shadow: inset 0px 0px 0px 6px rgba(240, 244, 248, 1);
 }
 
 .about-us-image img {
@@ -188,9 +189,47 @@ header {
 }
 
 .about-image-rightside {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   position: absolute;
   z-index: 10;
   bottom: 0;
   right: 0;
+}
+
+.about-us-info {
+  margin-top: 130px;
+  padding-bottom: 45px;
+  background: var(--color-light-grey);
+}
+
+.info-item-title {
+  font-size: var(--font-md-4);
+  color: var(--color-gold);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.info-item-text {
+  color: var(--md-dark-blue);
+  font-family: var(--f-pt-sans);
+  font-size: var(--font-md-1);
+  font-weight: bold;
+}
+
+.info-item-icon {
+  background: #fff url('../icons/about-block/Rectangle.svg') 0 0 no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  background-position: bottom right;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  box-shadow: 0px 16px 32px rgba(67, 86, 100, 0.2);
+  position: relative;
+  top: -35px;
 }
