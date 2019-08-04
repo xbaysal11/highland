@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Highland capital</title>
 </head>
 
@@ -63,12 +65,12 @@
             <div class="about-us-image">
               <img src="./img/about-block/about-image-2.png" alt="about-img-top">
             </div>
-            <div class="ml-1">
+            <div class="hc-ml-1">
               <img src="./icons/about-block/about-gray-dots.svg" alt="gray-dots">
             </div>
           </div>
           <div class="about-image-rightside d-flex">
-            <div class="mr-2 mb-6">
+            <div class="hc-mr-2 mb-6">
               <img src="./icons/about-block/about-dots-grid.svg" alt="dots-grid">
             </div>
             <div class="about-us-image">
@@ -105,113 +107,225 @@
       </div>
     </div>
   </section><!-- SECTION ABOUT US -->
-  <section class="hc-tabs-section">
-    <div class="hc-text-center">
-      <h3 class="hc-tabs-title">Why Highland Capital?</h3>
-      <div class="line-tabs"></div>
-    </div>
+  <section class="tabs-section">
     <div class="container">
-      <div class="hc-tabs">
-        <div class="hc-tab">
-          <input type="radio" name="css-tabs" id="hc-tab-1" checked class="hc-tab-switch">
-          <label for="hc-tab-1" class="hc-tab-label">Highland At-a-Glance</label>
-          <div class="hc-tab-content">
-            <div class="d-flex justify-content-between">
+      <div class="hc-text-center">
+        <h3 class="hc-tabs-title">Why Highland Capital?</h3>
+        <div class="line-tabs"></div>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item hc-tab">
+          <a class="nav-link hc-tab-label active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+            aria-controls="home" aria-selected="true">Highland At-a-Glance</a>
+        </li>
+        <li class="nav-item hc-tab">
+          <a class="nav-link hc-tab-label" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+            aria-controls="profile" aria-selected="false">Value creation</a>
+        </li>
+        <li class="nav-item hc-tab">
+          <a class="nav-link hc-tab-label" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+            aria-controls="contact" aria-selected="false">Strategy</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="d-flex justify-content-between">
+            <ul class="inner-tab-list">
+              <li>Impressive track record of investing in Kyrgyzstan</li>
+              <li>Strong investment team with previous Western investment management experience</li>
+              <li>$15 million in capital commitments from a diversified base of investors, including IFC, US and local
+                investors</li>
+            </ul>
+            <ul class="inner-tab-list">
+              <li>Outsized GP commitment to align its interests with investors</li>
+              <li>Participation in the first institutional private equity fund to invest in SME’s in Kyrgyzstan</li>
+              <li>Rapidly growing economy, liberal currency and capital repatriation system, rising middle-class
+                population and favorable macro environment</li>
+            </ul>
+          </div>
+        </div><!-- /TAB-1 -->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <p class="inner-tab-text">Highland Capital provides entrepreneurs with support not only through investments,
+            but also with their unique experience and strategic vision. The fund helps companies move to the next
+            stage of development:</p>
+          <div class="d-flex justify-content-between flex-wrap">
+            <div class="inner-list-item">
+              <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
+                <div class="inner-tab-icon">
+                  <img src="./icons/tabs/tab_icon_1.svg" alt="tab_icon_1">
+                </div>
+                <div class="list-item-title">Strategic transformation</div>
+              </div>
               <ul class="inner-tab-list">
-                <li>Impressive track record of investing in Kyrgyzstan</li>
-                <li>Strong investment team with previous Western investment management experience</li>
-                <li>$15 million in capital commitments from a diversified base of investors, including IFC, US and local
-                  investors</li>
+                <li>Providing long-term business strategy advice at the board level</li>
+                <li>Assessing & developing incentive-based compensation plans for executives</li>
+                <li>Onboarding human resources to strengthen management team</li>
+                <li>Implementing company development plan & setting KPIs</li>
               </ul>
+            </div><!-- INNER-LIST-ITEM -->
+            <div class="inner-list-item">
+              <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
+                <div class="inner-tab-icon">
+                  <img src="./icons/tabs/tab_icon_3.svg" alt="tab_icon_3">
+                </div>
+                <div class="list-item-title">Governance & institutionalism</div>
+              </div>
               <ul class="inner-tab-list">
-                <li>Outsized GP commitment to align its interests with investors</li>
-                <li>Participation in the first institutional private equity fund to invest in SME’s in Kyrgyzstan</li>
-                <li>Rapidly growing economy, liberal currency and capital repatriation system, rising middle-class
-                  population and favorable macro environment</li>
+                <li>Developing internal control systems</li>
+                <li>Enhancing financial reporting systems</li>
+                <li>Introducing corporate governance practices & international standards, where appropriate (e.g. ISO,
+                  FSSC, HACCP)</li>
+                <li>Preparing for external audit</li>
+              </ul>
+            </div><!-- INNER-LIST-ITEM -->
+            <div class="inner-list-item">
+              <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
+                <div class="inner-tab-icon">
+                  <img src="./icons/tabs/tab_icon_4.svg" alt="tab_icon_4">
+                </div>
+                <div class="list-item-title">Technical support</div>
+              </div>
+              <ul class="inner-tab-list">
+                <li>Attracting specialist expertise (e.g. marketing, production processes)</li>
+                <li>Identifying available technical assistance programs</li>
+                <li>Developing & implementing employee motivation schemes</li>
+                <li>Supporting in international expansion</li>
+              </ul>
+            </div><!-- INNER-LIST-ITEM -->
+            <div class="inner-list-item">
+              <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
+                <div class="inner-tab-icon">
+                  <img src="./icons/tabs/tab_icon_2.svg" alt="tab_icon_2">
+                </div>
+                <div class="list-item-title">Financing</div>
+              </div>
+              <ul class="inner-tab-list">
+                <li>Assisting in identifying additional financing from sources including foreign capital markets to
+                  complement Highland financing</li>
+                <li>Providing risk capital for niche uses of funds, such as acquisition financing and/or management
+                  buy-outs</li>
+              </ul>
+            </div><!-- INNER-LIST-ITEM -->
+          </div>
+        </div><!-- /TAB-2 -->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <p class="inner-tab-text">The fund provides growth capital in the form of equity or mezzanine investments:</p>
+          <ul class="inner-tab-list tab-list-row d-flex justify-content-between">
+            <li>for any purpose including financing working capital, shareholder buyout or acquisitions</li>
+            <li>investment size: <div class="font-weight-bold">$ 0,8 mil – $ 2,5 mil;</div>
+            </li>
+            <li>investment horizon: <div class="font-weight-bold">4 to 7 years;</div>
+            </li>
+          </ul>
+          <p class="inner-tab-text">The Fund’s investment strategy focuses on two major themes:</p>
+          <div class="d-flex justify-content-between flex-wrap">
+            <div class="w-50 mv-tab-list">
+              <div class="hc-bg-grey hc-mb-1 hc-mb-1">
+                <div class="list-item-title item-rm-icon">Domestic demand and consumer- oriented sectors</div>
+              </div>
+              <p class="item-text-block mb-3">Kyrgyzstan’s growing population and burgeoning middle class, along with
+                its remittances-driven economy, make the consumer sectors a strong bet:</p>
+              <ul>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/food.svg" alt="food"></div>
+                  <div class="item-text-block hc-ml-1">Food & beverage</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/house.svg" alt="house"></div>
+                  <div class="item-text-block hc-ml-1">Residential and commercial real estate</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/health.svg" alt="health"></div>
+                  <div class="item-text-block hc-ml-1">Healthcare</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/telecom.svg" alt="telecom"></div>
+                  <div class="item-text-block hc-ml-1">Telecom</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/education.svg" alt="education"></div>
+                  <div class="item-text-block hc-ml-1">Education</div>
+                </li>
+              </ul>
+            </div>
+            <div class="w-50 mv-tab-list">
+              <div class="hc-bg-grey hc-mb-1 hc-mb-1">
+                <div class="list-item-title item-rm-icon">Export driven sectors</div>
+              </div>
+              <p class="item-text-block mb-3">Kyrgyzstan is a member of the Eurasian Economic Union, a 186 million
+                person market, and has strong trade relationships with both China and Russia:</p>
+              <ul>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/organic.svg" alt="organic"></div>
+                  <div class="item-text-block hc-ml-1">Organic agriculture</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/food.svg" alt="food"></div>
+                  <div class="item-text-block hc-ml-1">Food & beverage: Dairy and meat processing</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/travel.svg" alt="travel"></div>
+                  <div class="item-text-block hc-ml-1">Tourism</div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <div><img src="./icons/tabs/service.svg" alt="service"></div>
+                  <div class="item-text-block hc-ml-1">Software & technology development; outsourcing services</div>
+                </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="hc-tab">
-          <input type="radio" name="css-tabs" id="hc-tab-2" class="hc-tab-switch">
-          <label for="hc-tab-2" class="hc-tab-label">Value creation</label>
-          <div class="hc-tab-content">
-            <p class="inner-tab-text">Highland Capital provides entrepreneurs with support not only through investments,
-              but also with their unique experience and strategic vision. The fund helps companies move to the next
-              stage of development:</p>
-            <div class="d-flex justify-content-between flex-wrap">
-              <div class="inner-list-item">
-                <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
-                  <div class="inner-tab-icon">
-                    <img src="./icons/tabs/tab_icon_1.svg" alt="tab_icon_1">
-                  </div>
-                  <div class="list-item-title">Strategic transformation</div>
-                </div>
-                <ul class="inner-tab-list">
-                  <li>Providing long-term business strategy advice at the board level</li>
-                  <li>Assessing & developing incentive-based compensation plans for executives</li>
-                  <li>Onboarding human resources to strengthen management team</li>
-                  <li>Implementing company development plan & setting KPIs</li>
-                </ul>
-              </div><!-- INNER-LIST-ITEM -->
-              <div class="inner-list-item">
-                <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
-                  <div class="inner-tab-icon">
-                    <img src="./icons/tabs/tab_icon_3.svg" alt="tab_icon_3">
-                  </div>
-                  <div class="list-item-title">Governance & institutionalism</div>
-                </div>
-                <ul class="inner-tab-list">
-                  <li>Developing internal control systems</li>
-                  <li>Enhancing financial reporting systems</li>
-                  <li>Introducing corporate governance practices & international standards, where appropriate (e.g. ISO,
-                    FSSC, HACCP)</li>
-                  <li>Preparing for external audit</li>
-                </ul>
-              </div><!-- INNER-LIST-ITEM -->
-              <div class="inner-list-item">
-                <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
-                  <div class="inner-tab-icon">
-                    <img src="./icons/tabs/tab_icon_4.svg" alt="tab_icon_4">
-                  </div>
-                  <div class="list-item-title">Technical support</div>
-                </div>
-                <ul class="inner-tab-list">
-                  <li>Attracting specialist expertise (e.g. marketing, production processes)</li>
-                  <li>Identifying available technical assistance programs</li>
-                  <li>Developing & implementing employee motivation schemes</li>
-                  <li>Supporting in international expansion</li>
-                </ul>
-              </div><!-- INNER-LIST-ITEM -->
-              <div class="inner-list-item">
-                <div class="d-flex align-items-center hc-bg-grey hc-mb-1 hc-mb-1">
-                  <div class="inner-tab-icon">
-                    <img src="./icons/tabs/tab_icon_2.svg" alt="tab_icon_2">
-                  </div>
-                  <div class="list-item-title">Financing</div>
-                </div>
-                <ul class="inner-tab-list">
-                  <li>Assisting in identifying additional financing from sources including foreign capital markets to
-                    complement Highland financing</li>
-                  <li>Providing risk capital for niche uses of funds, such as acquisition financing and/or management
-                    buy-outs</li>
-                </ul>
-              </div><!-- INNER-LIST-ITEM -->
-            </div>
-          </div>
-        </div>
-        <div class="hc-tab">
-          <input type="radio" name="css-tabs" id="hc-tab-3" class="hc-tab-switch">
-          <label for="hc-tab-3" class="hc-tab-label">Strategy</label>
-          <div class="hc-tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him
-            and
-            my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to
-            maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long
-            voyages.</div>
+        </div><!-- /TAB-3 -->
+      </div>
+    </div>
+  </section><!-- /TABS SECTION -->
+  <section>
+    <div class="video-section">
+      <video preload="metadata" loop autoplay width="100%" height="100%" muted>
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+      <div class="video-title-block d-flex align-items-center justify-content-center">
+        <div class="video-title-wrapper">
+          <h3 class="video-title mb-5">Case study</h3>
+          <div class="mb-5"><img src="./icons/play_btn.svg" alt="play"></div>
+          <p class="item-text-block text-white">Highland Capital fund focuses on providing growth capital and support to
+            businesses in Kyrgyzstan. The Fund provides equity and mezzanine investments to SMEs to help them
+            institutionalize and grow into large regional champions.</p>
         </div>
       </div>
     </div>
-  </section><!-- SECTION TABS BLOCK -->
+  </section><!-- /VIDEO SECTION -->
+  <section class="hc-parallax-block">
+    <div class="hc-parallax">
+      <div class="hc-layer hc-layer-2"></div>
+      <div class="hc-layer hc-layer-1"></div>
+      <div class="hc-layer hc-layer-3" data-depth="0.24" data-type="parallax"></div>
+      <div class="hc-layer hc-layer-4" data-depth="0.20" data-type="parallax"></div>
+      <div class="team-block-title">
+        <div class="team-block-wrapper">
+          <h4 class="team-title">Team</h4>
+          <div class="line line-team"></div>
+          <p class="team-block-text">The Highland team is run by a team of seasoned investment professionals that combine best western practice with intimate local knowledge. The team started its operations in Bishkek in June 2014 and has a successfully history of sourcing, evaluating, and executing investments in Kyrgyzstan. As a result of Highland’s previous work in researching, reviewing and funding investment projects, Highland has established itself as a primary point of reference for risk capital within local financial institutions network</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- /hc-parallax-block -->
+  <section class="team-section">
+    <div>
+      
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="./js/core.js"></script>
 </body>
 
 </html>
