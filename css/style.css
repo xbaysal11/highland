@@ -23,6 +23,7 @@ body {
   --color-white: #ffffff;
   --dark-blue: #1B2D43;
   --md-dark-blue: #35425B;
+  --color-dark-2: #101B29;
   /* FONT SIZE */
   --font-base: 16px;
   --font-md-1: 18px;
@@ -136,6 +137,7 @@ header {
 .about-us-title {
   font-size: var(--font-lg);
   font-weight: bold;
+  color: var(--dark-blue);
 }
 
 .about-us-text {
@@ -376,16 +378,16 @@ header {
 }
 
 .tabs-section .nav-link.active {
-  color: #101B29;
+  color: var(--color-dark-2);
 }
 
 .tabs-section .nav-link:hover {
-  color: #101B29;
+  color: var(--color-dark-2);
 }
 
 .tabs-section .nav-link.active:hover {
   border: none;
-  color: #101B29;
+  color: var(--color-dark-2);
 }
 .tabs-section .nav-link:focus {
   outline: none;
@@ -434,7 +436,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background: #101B29;
+  background: var(--color-dark-2);
   opacity: 0.8;
   width: 100%;
   height: 100%;
@@ -464,16 +466,12 @@ header {
   min-height: 900px;
   position: relative;
   overflow: hidden;
-}
-
-.hc-layer-2 {
   background: url('../img/team-block/parallax/back_mount.png');
-  height: 900px;
-  position: static!important;
 }
 
 .hc-layer-1 {
   background: url('../img/team-block/parallax/front_mountains.png');
+  background-position: center center;
   height: 850px;
   width: 100%;
   position: absolute;
@@ -484,7 +482,9 @@ header {
 
 .hc-layer-3 {
   background: url('../img/team-block/parallax/clouds.png');
-  height: 1083px!important;
+  height: 1018px!important;
+  position: absolute;
+  bottom: -118%;
   z-index: 2;
 }
 
@@ -496,6 +496,7 @@ header {
   margin: auto;
   left: 0;
   right: 0;
+  position: absolute;
   bottom: -180px;
 }
 
@@ -504,7 +505,6 @@ header {
   background-size: cover;
   width: 100%;
 	height: 900px;
-	position: fixed;
 }
 
 .team-title {
@@ -528,6 +528,7 @@ header {
 .team-block-wrapper {
   max-width: 1000px;
   text-align: center;
+  margin-bottom: 190px;
 }
 
 .line-team {
@@ -541,6 +542,72 @@ header {
   line-height: 32px;
 }
 
-.hc-parallax-block {
-  overflow: hidden;
+.card-title-block {
+  padding: 20px 8px;
+  background: var(--color-grey);
+  text-align: center;
+}
+
+.team-card {
+  width: 25%;
+  max-width: 280px;
+  margin-bottom: 32px;
+}
+
+.card-name {
+  color: var(--color-dark-2);
+  font-size: var(--font-base);
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card-position {
+  color: var(--md-dark-blue);
+  font-size: var(--font-base);
+}
+
+.team-section {
+  padding-bottom: 38px;
+}
+
+.about-country-block {
+  background: var(--color-grey);
+  padding: 120px 112px;
+}
+
+.about-country-rightside {
+  max-width: 696px;
+  width: 100%;
+  background: url('../img/country-block/country-map.svg') 0 55px no-repeat;
+}
+
+.about-country-leftside {
+  max-width: 488px;
+  width: 100%;
+}
+
+.about-country-item {
+  max-width: 280px;
+}
+
+.about-country-image {
+  -webkit-box-shadow: inset 0px 0px 0px 6px rgba(240, 244, 248, 1);
+  box-shadow: inset 0px 0px 0px 6px rgba(240, 244, 248, 1);
+}
+
+.country-image-1 {
+  width: 196px;
+  height: 128px;
+}
+
+.country-image-2 {
+  width: 148px;
+  height: 148px;
+  background-position: center center;
+  margin-bottom: 80px;
+}
+
+.country-image-3 {
+  width: 280px;
+  height: 188px;
 }
