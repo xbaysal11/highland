@@ -611,3 +611,24 @@ header {
   width: 280px;
   height: 188px;
 }
+
+.country-info {
+  padding: 40px 0;
+  background: var(--color-light-grey);
+}
+
+.country-info-title {
+  font-size: var(--font-md-1);
+  color: var(--md-dark-blue);
+  font-family: var(--f-pt-sans);
+}
+
+.country-info-text {
+  color: var(--dark-blue);
+  font-size: var(--font-md-2);
+  font-weight: bold;
+}
+
+.country-info-image img {
+  height: 48px;
+}
