@@ -15,3 +15,12 @@ window.addEventListener('scroll', function(event) {
     layer.style.transform = translate3d;
   }
 });
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    items: 2,
+    margin: 72,
+    nav: true
+  });
+});
