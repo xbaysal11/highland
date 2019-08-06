@@ -19,8 +19,9 @@ window.addEventListener('scroll', function(event) {
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     loop: false,
-    items: 2,
+    items: 3,
     margin: 72,
-    nav: true
+    center: false,
+    nav: true,
   });
 });
