@@ -1,4 +1,5 @@
 
+//parallax
 window.addEventListener('scroll', function(event) {
   var depth, i, layer, layers, len, movement, topDistance, translate3d;
   topDistance = this.pageYOffset;
@@ -15,6 +16,8 @@ window.addEventListener('scroll', function(event) {
     layer.style.transform = translate3d;
   }
 });
+
+//carousel
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     loop: false,
@@ -32,3 +35,29 @@ $("#myCarousel").carousel({
 $("#NewsCarousel").carousel({
   interval: false
 });
+
+//form input file script
+function myFunction(){
+  var x = document.getElementById("file");
+  var txt = "";
+  if ('files' in x) {
+    if (x.files.length == 0) {
+      txt = "";
+    } else {
+      for (var i = 0; i < x.files.length; i++) {
+        var file = x.files[i];
+        if ('name' in file) {
+          txt += "<p>" + file.name + "</p>";
+        }
+      }
+    }
+  }
+  document.getElementById("filesInfo").innerHTML = txt;
+}
+
+var formSub = document.getElementById('formSub');
+var formSuccess = document.getElementById('formSuccess');
+var subBtn = document.getElementById('subBtn');
+if (subBtn.click()) {
+  console.log('fdf');
+}

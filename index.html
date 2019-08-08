@@ -49,11 +49,11 @@
       </div>
     </div>
   </header><!-- /header -->
-  <section class="about-us">
+  <section class="about-us hc-dark-blue">
     <div class="container">
       <div class="d-flex justify-content-between">
         <div class="about-us-leftside">
-          <h2 class="about-us-title">About us</h2>
+          <h2 class="about-us-title hc-dark-blue">About us</h2>
           <div class="line"></div>
           <p class="about-us-text">Highland Capital focuses on providing growth capital and support to businesses in
             Kyrgyzstan. We provide equity and mezzanine investments to SMEs to help them institutionalize and grow into
@@ -112,7 +112,7 @@
   <section class="tabs-section">
     <div class="container">
       <div class="text-center">
-        <h3 class="hc-tabs-title">Why Highland Capital?</h3>
+        <h3 class="hc-tabs-title hc-dark-blue">Why Highland Capital?</h3>
         <div class="line-tabs"></div>
       </div>
       <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -765,12 +765,27 @@
         </div><!-- leftside -->
         <div class="contact-section-rightside">
           <form action="#">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" name="Email" id="" placeholder="Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <input type="file" multiple="multiple">
-            <button type="submit">Submit</button>
+            <div id="formSub">
+              <input type="text" placeholder="Full Name" required>
+              <input type="email" name="Email" id="" placeholder="Email" required>
+              <input type="text" placeholder="Subject" required>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+              <input type="file" multiple="multiple" data-multiple-caption="{count} files selected" class="inputfile"
+                name="file" id="file" onchange="myFunction()">
+              <label for="file">
+                <div>Attachment</div>
+                <div class="file-clip"></div>
+              </label>
+              <div id="filesInfo"></div>
+            </div>
+            <!-- <div id="formSuccess">
+                <div class="info-item">
+                    <div class="info-item-icon"><img src="./icons/about-block/case.svg" alt=""></div>
+                    <div class="info-item-title">$15 million</div>
+                    <p class="info-item-text">First close</p>
+                  </div>
+            </div> -->
+            <button id="subBtn" type="button">Submit</button>
           </form>
         </div>
       </div>
