@@ -66,7 +66,7 @@ body {
 }
 
 .hc-light-grey {
-  background: var(--color-md-grey)!important;
+  background: var(--color-md-grey) !important;
 }
 
 .container {
@@ -409,6 +409,7 @@ header {
   border: none;
   color: var(--color-dark-2);
 }
+
 .tabs-section .nav-link:focus {
   outline: none;
   border: none;
@@ -502,7 +503,7 @@ header {
 
 .hc-layer-3 {
   background: url('../img/team-block/parallax/clouds.png');
-  height: 1018px!important;
+  height: 1018px !important;
   position: absolute;
   bottom: -118%;
   z-index: 2;
@@ -524,7 +525,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-	height: 900px;
+  height: 900px;
 }
 
 .team-title {
@@ -566,12 +567,36 @@ header {
   padding: 20px 8px;
   background: var(--color-grey);
   text-align: center;
+  transition: .4s ease-in-out;
 }
 
 .team-card {
   width: 25%;
   max-width: 280px;
   margin-bottom: 32px;
+  cursor: pointer;
+  background: var(--color-light-grey);
+}
+
+.team-fixed-card {
+  transition: .4s ease-in-out;
+}
+
+.team-fixed-card:hover {
+  transform: translate(-16px, -16px);
+}
+
+.team-card:hover .card-title-block{
+  background: var(--dark-blue);
+
+}
+
+.team-card:hover .card-name {
+  color: var(--color-white);
+}
+
+.team-card:hover .card-position {
+  color: var(--color-white);
 }
 
 .card-name {
@@ -579,15 +604,17 @@ header {
   font-size: var(--font-base);
   font-weight: bold;
   margin-bottom: 12px;
+  transition: .4s ease-in-out;
 }
 
 .card-position {
   color: var(--md-dark-blue);
   font-size: var(--font-base);
+  transition: .4s ease-in-out;
 }
 
 .team-section {
-  padding-bottom: 38px;
+  padding: 38px 0;
 }
 
 .about-country-block {
@@ -727,7 +754,7 @@ header {
   margin: 0 auto;
 }
 
-.rising-text p{
+.rising-text p {
   font-family: var(--f-pt-sans);
   font-size: var(--font-base);
   color: var(--md-dark-blue);
@@ -803,19 +830,19 @@ header {
 }
 
 .slider-wrapper .owl-prev {
-  background: url('../icons/rising/right_arrow.svg') 0 0 no-repeat!important;
+  background: url('../icons/rising/right_arrow.svg') 0 0 no-repeat !important;
   width: 48px;
   height: 48px;
   transform: rotate(-180deg);
-  font-size: 0!important;
+  font-size: 0 !important;
   margin-right: 16px;
 }
 
 .slider-wrapper .owl-next {
-  background: url('../icons/rising/right_arrow.svg') 0 0 no-repeat!important;
+  background: url('../icons/rising/right_arrow.svg') 0 0 no-repeat !important;
   width: 48px;
   height: 48px;
-  font-size: 0!important;
+  font-size: 0 !important;
 }
 
 .contact-section {
@@ -877,4 +904,93 @@ header {
   border: none;
   text-transform: uppercase;
   color: #72809D;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modal-video-block {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-section .modal-dialog {
+  max-width: 992px;
+  width: 100%;
+}
+
+.video-section .modal-content {
+  background: var(--color-dark-2);
+  border: none;
+}
+
+.video-section .modal-header {
+  border-bottom: none;
+}
+
+.video-section .modal-body {
+  padding: 0 56px 56px;
+}
+
+.video-section .close {
+  background: var(--dark-blue);
+  padding: 8px 10px;
+}
+
+.video-section .modal {
+  background: var(--color-dark-2);
+}
+
+.modal-video-block iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hc-play {
+  background: url('../icons/play_btn.svg') center no-repeat;
+  width: 70px;
+  height: 70px;
+  transition: all .3s ease-in-out;
+}
+
+.hc-play:hover {
+  background: url('../icons/play_btn_dis.svg') center no-repeat;
+}
+
+.team-section .modal-dialog {
+  max-width: 976px;
+}
+
+.team-section .modal-body {
+  padding: 32px;
+}
+
+.modal-card-rightside {
+  padding: 72px 0px 0 32px;
+}
+
+.modal-card-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: var( --color-dark-2);
+}
+
+.modal-card-position {
+  font-weight: bold;
+  font-size: var(--font-base);
+  color: var( --color-dark-2);
+}
+
+.modal-card-text {
+  font-family: var(--f-pt-sans);
+  font-size: var(--font-md-1);
+  color: var( --color-dark-2);
+  line-height: 27px;
 }

@@ -288,10 +288,35 @@
       <div class="video-title-block d-flex align-items-center justify-content-center">
         <div class="video-title-wrapper">
           <h3 class="video-title mb-5">Case study</h3>
-          <div class="mb-5"><img src="./icons/play_btn.svg" alt="play"></div>
+          <div class="mb-5">
+            <button type="button" class="btn hc-play" data-toggle="modal" data-target="#myModal">
+            </button>
+          </div>
           <p class="item-text-block text-white">Highland Capital fund focuses on providing growth capital and support to
             businesses in Kyrgyzstan. The Fund provides equity and mezzanine investments to SMEs to help them
             institutionalize and grow into large regional champions.</p>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <img src="./icons/close.svg" alt="close">
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="modal-video-block">
+                <iframe width="100%" height="100%"
+                  src="https://www.youtube.com/embed/D1ySve_mPy4?list=LLk_0VCCXZWk2Nlf9HhZfsmg" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -317,61 +342,102 @@
   </section><!-- /hc-parallax-block -->
   <section class="team-section">
     <div class="container">
+      <!-- The Modal -->
+      <div class="modal fade" id="card-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="modal-card-info d-flex">
+                <div><img src="./img/team-block/modal-card.png" alt="card"></div>
+                <div class="modal-card-rightside">
+                  <div>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <img src="./icons/close.svg" alt="close">
+                    </button>
+                  </div>
+                  <div class="modal-card-name hc-mb-1">Cholpon Jumashukurov</div>
+                  <div class="modal-card-position hc-mb-1">Co-founde</div>
+                  <p class="modal-card-text">Co-founder of Highland Capital and a member of the Investment Committee.
+                    10 years of investing experience in Kyrgyzstan and abroad. Formerly with Farallon Capital
+                    Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="d-flex justify-content-between flex-wrap">
-        <div class="team-card">
-          <div><img src="./img/team-block/card-1.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Cholpon Jumashukurov</div>
-            <span class="card-position">Co-founder</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-1.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Cholpon Jumashukurov</div>
+              <span class="card-position">Co-founder</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-2.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Eldan Usubakunov</div>
-            <span class="card-position">Co-founder</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-2.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Eldan Usubakunov</div>
+              <span class="card-position">Co-founder</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-3.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Gregory R. Serrurier</div>
-            <span class="card-position">Investment Committee member</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-3.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Gregory R. Serrurier</div>
+              <span class="card-position">Investment Committee member</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-4.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Kantemir Chalbaev</div>
-            <span class="card-position">Investment Director</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-4.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Kantemir Chalbaev</div>
+              <span class="card-position">Investment Director</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-5.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Jazgulu Raiymbekova</div>
-            <span class="card-position">Investment Manager</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-5.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Jazgulu Raiymbekova</div>
+              <span class="card-position">Investment Manager</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-6.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Igor Kim</div>
-            <span class="card-position">Investment Manager</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-6.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Igor Kim</div>
+              <span class="card-position">Investment Manager</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-7.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Saniya Isakova</div>
-            <span class="card-position">Independent expert</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-7.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Saniya Isakova</div>
+              <span class="card-position">Independent expert</span>
+            </div>
           </div>
         </div><!-- card -->
-        <div class="team-card">
-          <div><img src="./img/team-block/card-8.png" alt="card"></div>
-          <div class="card-title-block">
-            <div class="card-name">Jetigen Sulaimanov</div>
-            <span class="card-position">Analyst</span>
+        <div class="team-card" data-toggle="modal" data-target="#card-1">
+          <div class="team-fixed-card">
+            <div><img src="./img/team-block/card-8.png" alt="card"></div>
+            <div class="card-title-block">
+              <div class="card-name">Jetigen Sulaimanov</div>
+              <span class="card-position">Analyst</span>
+            </div>
           </div>
         </div><!-- card -->
       </div>
@@ -565,9 +631,11 @@
           <div class="hc-title-md hc-mb-1">Highland Capital - Investment Advisor</div>
           <p class="about-us-text">Avangard Business Center, 125/1 Toktogul street, 7th floor, Bishkek, Kyrgyzstan</p>
           <p class="about-us-text">Tel.: +996 312 961 935</p>
-          <p class="about-us-text">For general inquiries, please contact us via email at: <a class="hc-link-underline hc-dark-blue" href="mailto:info@highland.kg">info@highland.kg</a></p>
+          <p class="about-us-text">For general inquiries, please contact us via email at: <a
+              class="hc-link-underline hc-dark-blue" href="mailto:info@highland.kg">info@highland.kg</a></p>
           <div class="hc-title-md hc-mb-1">Highland Private Equity & Mezzanine Fund, L.P.</div>
-          <p class="hc-lh-normal">For Investor Relations inquiries, please contact Eldan Usubakunov at: <a class="hc-link-underline hc-dark-blue" href="mailto:usubakunov@highland.kg">usubakunov@highland.kg</a></p>
+          <p class="hc-lh-normal">For Investor Relations inquiries, please contact Eldan Usubakunov at: <a
+              class="hc-link-underline hc-dark-blue" href="mailto:usubakunov@highland.kg">usubakunov@highland.kg</a></p>
         </div><!-- leftside -->
         <div class="contact-section-rightside">
           <form action="#">
@@ -575,7 +643,7 @@
             <input type="email" name="Email" id="" placeholder="Email" required>
             <input type="text" placeholder="Subject" required>
             <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <input type="file"  multiple="multiple">
+            <input type="file" multiple="multiple">
             <button type="submit">Submit</button>
           </form>
         </div>
