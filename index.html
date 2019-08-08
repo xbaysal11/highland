@@ -351,8 +351,8 @@
             <div class="modal-body">
               <div class="hc-nav-buttons">
                 <div class="d-flex">
-                  <button class="hc-prev hc-btn-hover d-block"></button>
-                  <button class="hc-next hc-btn-hover d-block"></button>
+                  <a href="#myCarousel" data-slide="prev" class="hc-prev hc-btn-hover d-block"></a>
+                  <a href="#myCarousel" data-slide="next" class="hc-next hc-btn-hover d-block"></a>
                 </div>
                 <button type="button" class="close" data-dismiss="modal">
                   <img src="./icons/close.svg" alt="close">
@@ -406,21 +406,14 @@
                             Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
                         </div>
                       </div>
-                    </div>
+                    </div><!-- carousel item -->
                   </div>
-                  <!-- Left and right controls -->
-                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                </div><!-- carousel -->
+              </div><!-- The card carousel -->
+            </div><!-- The Modal body -->
+          </div><!-- The Modal content -->
+        </div><!-- The Modal dialog -->
+      </div><!-- The Modal -->
       <div class="d-flex justify-content-between flex-wrap">
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
@@ -635,13 +628,92 @@
       <h4 class="slider-title">News</h4>
     </div>
     <div class="slider-wrapper">
-      <div class="owl-nav">
-        <div class="owl-prev">prev</div>
-        <div class="owl-next">next</div>
-      </div>
+      <!-- The Modal -->
+      <div class="modal fade" id="newsCarousel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="d-flex justify-content-end hc-mb-3">
+                <a href="#NewsCarousel" data-slide="prev" class="hc-prev hc-btn-hover d-block"></a>
+                <a href="#NewsCarousel" data-slide="next" class="hc-next hc-btn-hover d-block"></a>
+                <button type="button" class="close" data-dismiss="modal">
+                  <img src="./icons/close.svg" alt="close">
+                </button>
+              </div>
+              <div id="NewsCarousel" class="carousel slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-item-content">
+                      <h6 class="hc-title-md hc-mb-1">Highland Capital holds first close on private equity fund focused
+                        on Kyrgyzstan</h6>
+                      <div class="hc-color-gold font-weight-bold default-size-1 hc-mb-1">08/05/2019</div>
+                      <p class="default-size-pt">Nicosia, Cyprus (May 8, 2019) — HeadHunter Group PLC (“HeadHunter”),
+                        the leading online
+                        recruitment platform operating in Russia and the Commonwealth of Independent States, announced
+                        today the pricing of its initial public offering of 16,304,348 American Depositary Shares
+                        (“ADSs”), each representing one ordinary share offered by certain selling shareholders, at a
+                        public offering price of $13.50 per ADS. The underwriters of the offering will also have a
+                        30-day option to purchase up to an additional 2,445,652 ADSs from the selling shareholders at
+                        the initial public offering price. The ADSs are expected to begin trading on the Nasdaq Global
+                        Select Market on May 9, 2019 under the ticker symbol “HHR.” <br><br>The closing of the offering
+                        is expected to occur on May 13, 2019 subject to satisfaction of customary closing conditions.
+                        <br> Morgan Stanley & Co. LLC, Goldman Sachs & Co. LLC, Credit Suisse Securities (USA) LLC, VTB
+                        Capital plc, BofA Merrill Lynch and Sberbank CIB (UK) Limited are acting as joint book running
+                        managers for the proposed offering. The offering is being made only by means of a prospectus. A
+                        copy of the final prospectus relating to this offering, when available, may be obtained from any
+                        of the following sources: Morgan Stanley & Co. LLC, Attention: Prospectus Department, 180 Varick
+                        Street, 2nd Floor, New York, NY 10014; or Goldman Sachs & Co. LLC, Attention: Prospectus
+                        Department, 200 West Street, New York, New York 10282, via telephone: 1-866-471-2526, or via
+                        email: prospectus-ny@ny.email.gs.com. A registration statement on Form F-1 relating to these
+                        securities has been filed with, and was declared effective by, the U.S. Securities and Exchange
+                        Commission. This press release shall not constitute an offer to sell or the solicitation of an
+                        offer to buy nor shall there be any sale of these securities in any state or jurisdiction in
+                        which such offer, solicitation or sale would be unlawful prior to registration or qualification
+                        under the securities laws of any such state or jurisdiction.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <h6 class="hc-title-md hc-mb-1">Highland Capital holds first close on private equity fund focused
+                        on Kyrgyzstan</h6>
+                      <div class="hc-color-gold font-weight-bold default-size-1 hc-mb-1">08/05/2019</div>
+                      <p class="default-size-pt">Nicosia, Cyprus (May 8, 2019) — HeadHunter Group PLC (“HeadHunter”),
+                        the leading online
+                        recruitment platform operating in Russia and the Commonwealth of Independent States, announced
+                        today the pricing of its initial public offering of 16,304,348 American Depositary Shares
+                        (“ADSs”), each representing one ordinary share offered by certain selling shareholders, at a
+                        public offering price of $13.50 per ADS. The underwriters of the offering will also have a
+                        30-day option to purchase up to an additional 2,445,652 ADSs from the selling shareholders at
+                        the initial public offering price. The ADSs are expected to begin trading on the Nasdaq Global
+                        Select Market on May 9, 2019 under the ticker symbol “HHR.” <br><br>The closing of the offering
+                        is expected to occur on May 13, 2019 subject to satisfaction of customary closing conditions.
+                        <br> Morgan Stanley & Co. LLC, Goldman Sachs & Co. LLC, Credit Suisse Securities (USA) LLC, VTB
+                        Capital plc, BofA Merrill Lynch and Sberbank CIB (UK) Limited are acting as joint book running
+                        managers for the proposed offering. The offering is being made only by means of a prospectus. A
+                        copy of the final prospectus relating to this offering, when available, may be obtained from any
+                        of the following sources: Morgan Stanley & Co. LLC, Attention: Prospectus Department, 180 Varick
+                        Street, 2nd Floor, New York, NY 10014; or Goldman Sachs & Co. LLC, Attention: Prospectus
+                        Department, 200 West Street, New York, New York 10282, via telephone: 1-866-471-2526, or via
+                        email: prospectus-ny@ny.email.gs.com. A registration statement on Form F-1 relating to these
+                        securities has been filed with, and was declared effective by, the U.S. Securities and Exchange
+                        Commission. This press release shall not constitute an offer to sell or the solicitation of an
+                        offer to buy nor shall there be any sale of these securities in any state or jurisdiction in
+                        which such offer, solicitation or sale would be unlawful prior to registration or qualification
+                        under the securities laws of any such state or jurisdiction.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                  </div><!-- carousel item -->
+                </div>
+              </div><!-- carousel -->
+            </div><!-- The Modal body -->
+          </div><!-- The Modal content -->
+        </div><!-- The Modal dialog -->
+      </div><!-- The Modal -->
       <div class="owl-carousel">
-
-        <div class="hc-slide">
+        <div class="hc-slide" data-toggle="modal" data-target="#newsCarousel">
           <div class="hc-slide-title font-weight-bold hc-mb-1">Highland Capital holds first close on private equity fund
             focused on Kyrgyzstan</div>
           <div class="hc-slide-date font-weight-bold hc-mb-1">08 MAY 2019</div>
@@ -649,7 +721,7 @@
             in capital commitments. The fund seeks total $30 million and expects to hold the final close by August 2019.
           </p>
         </div>
-        <div class="hc-slide">
+        <div class="hc-slide" data-toggle="modal" data-target="#newsCarousel">
           <div class="hc-slide-title font-weight-bold hc-mb-1">Highland Capital holds first close on private equity fund
             focused on Kyrgyzstan</div>
           <div class="hc-slide-date font-weight-bold hc-mb-1">08 MAY 2019</div>
@@ -657,7 +729,7 @@
             in capital commitments. The fund seeks total $30 million and expects to hold the final close by August 2019.
           </p>
         </div>
-        <div class="hc-slide">
+        <div class="hc-slide" data-toggle="modal" data-target="#newsCarousel">
           <div class="hc-slide-title font-weight-bold hc-mb-1">Highland Capital holds first close on private equity fund
             focused on Kyrgyzstan</div>
           <div class="hc-slide-date font-weight-bold hc-mb-1">08 MAY 2019</div>
@@ -665,7 +737,7 @@
             in capital commitments. The fund seeks total $30 million and expects to hold the final close by August 2019.
           </p>
         </div>
-        <div class="hc-slide">
+        <div class="hc-slide" data-toggle="modal" data-target="#newsCarousel">
           <div class="hc-slide-title font-weight-bold hc-mb-1">Highland Capital holds first close on private equity fund
             focused on Kyrgyzstan</div>
           <div class="hc-slide-date font-weight-bold hc-mb-1">08 MAY 2019</div>
@@ -703,11 +775,10 @@
         </div>
       </div>
     </div><!-- container country-us -->
-  </section>
+  </section><!-- contact-section -->
   <footer class="footer">
     © 2019 Highland Capital Fund
   </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

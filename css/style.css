@@ -37,8 +37,24 @@ body {
   color: var(--color-dark-2);
 }
 
+.default-size-pt {
+  font-family: var(--f-pt-sans);
+  font-size: var(--font-base);
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.default-size-1 {
+  font-family: var(--f-pt-sans);
+  font-size: var(--font-md-1);
+}
+
 .hc-mb-1 {
   margin-bottom: 16px;
+}
+
+.hc-mb-3 {
+  margin-bottom: 32px;
 }
 
 .hc-lh-normal {
@@ -1031,6 +1047,10 @@ button:focus {
   opacity: .8;
 }
 
+.hc-btn-hover:focus {
+  outline: none;
+}
+
 .team-section .close {
   background: var(--dark-blue);
   padding: 8px 10px;
@@ -1040,10 +1060,38 @@ button:focus {
 
 .modal-card-image {
   transform: translate(-32px, -32px);
-  animation: cardImage .7s ease-in-out;
+  animation: cardImage .9s ease-in-out;
 }
 
 @keyframes cardImage {
   0% { transform: translate(0, 0); }
   100% { transform: translate(-32px, -32px); }
  }
+
+.team-section .modal-dialog {
+  overflow: hidden;
+  padding-left: 32px;
+}
+
+.team-section .carousel-inner {
+  overflow: visible;
+}
+
+.section-slider .modal-dialog {
+  max-width: 976px;
+}
+
+.section-slider .modal-body {
+  padding: 0 0 32px;
+}
+
+.section-slider .close {
+  background: var(--dark-blue);
+  padding: 8px 10px;
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+.carousel-item-content {
+  padding: 0 32px;
+}

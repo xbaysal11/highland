@@ -28,3 +28,7 @@ $(document).ready(function(){
 $("#myCarousel").carousel({
   interval: false
 });
+
+$("#NewsCarousel").carousel({
+  interval: false
+});
