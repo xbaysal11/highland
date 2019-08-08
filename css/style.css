@@ -964,16 +964,25 @@ button:focus {
   background: url('../icons/play_btn_dis.svg') center no-repeat;
 }
 
+.team-section .modal {
+  background: rgba(000, 000 ,000 , 0.75);
+}
+
 .team-section .modal-dialog {
   max-width: 976px;
 }
 
+.team-section .modal-content {
+  border-radius: 0;
+  border: none;
+}
+
 .team-section .modal-body {
-  padding: 32px;
+  padding: 0;
 }
 
 .modal-card-rightside {
-  padding: 72px 0px 0 32px;
+  padding: 72px 32px 32px;
 }
 
 .modal-card-name {
@@ -993,4 +1002,41 @@ button:focus {
   font-size: var(--font-md-1);
   color: var( --color-dark-2);
   line-height: 27px;
+}
+
+.hc-prev {
+  background: url('../icons/hc-prev.svg') center center no-repeat, var(--color-light-grey);
+  padding: 20px;
+  border: none;
+}
+
+.hc-next {
+  background: url('../icons/hc-next.svg') center center no-repeat, var(--color-light-grey);
+  padding: 20px;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.hc-nav-buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+}
+
+.hc-btn-hover:hover {
+  opacity: .8;
+}
+
+.team-section .close {
+  background: var(--dark-blue);
+  padding: 8px 10px;
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+.modal-card-image {
+  transform: translate(-32px, -32px)
 }
