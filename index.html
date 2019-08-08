@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/media.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -348,23 +349,72 @@
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
-              <div class="modal-card-info d-flex">
-                <div class="modal-card-image"><img src="./img/team-block/modal-card.png" alt="card"></div>
-                <div class="modal-card-rightside">
-                  <div class="hc-nav-buttons">
-                    <div class="d-flex">
-                      <button class="hc-prev hc-btn-hover d-block"></button>
-                      <button class="hc-next hc-btn-hover d-block"></button>
+              <div class="hc-nav-buttons">
+                <div class="d-flex">
+                  <button class="hc-prev hc-btn-hover d-block"></button>
+                  <button class="hc-next hc-btn-hover d-block"></button>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">
+                  <img src="./icons/close.svg" alt="close">
+                </button>
+              </div>
+              <div class="card-carousel">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="modal-card-info d-flex">
+                        <div class="modal-card-image">
+                          <img src="./img/team-block/modal-card.png" alt="card">
+                        </div>
+                        <div class="modal-card-rightside">
+                          <div class="modal-card-name hc-mb-1">Cholpon Jumashukurov</div>
+                          <div class="modal-card-position hc-mb-1">Co-founde</div>
+                          <p class="modal-card-text">Co-founder of Highland Capital and a member of the Investment
+                            Committee.
+                            10 years of investing experience in Kyrgyzstan and abroad. Formerly with Farallon Capital
+                            Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
+                        </div>
+                      </div>
                     </div>
-                    <button type="button" class="close" data-dismiss="modal">
-                      <img src="./icons/close.svg" alt="close">
-                    </button>
+                    <div class="carousel-item">
+                      <div class="modal-card-info d-flex">
+                        <div class="modal-card-image">
+                          <img src="./img/team-block/modal-card.png" alt="card">
+                        </div>
+                        <div class="modal-card-rightside">
+                          <div class="modal-card-name hc-mb-1">Cholpon Jumashukurov</div>
+                          <div class="modal-card-position hc-mb-1">Co-founde</div>
+                          <p class="modal-card-text">Co-founder of Highland Capital and a member of the Investment
+                            Committee.
+                            10 years of investing experience in Kyrgyzstan and abroad. Formerly with Farallon Capital
+                            Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="modal-card-info d-flex">
+                        <div class="modal-card-image">
+                          <img src="./img/team-block/modal-card.png" alt="card">
+                        </div>
+                        <div class="modal-card-rightside">
+                          <div class="modal-card-name hc-mb-1">Cholpon Jumashukurov</div>
+                          <div class="modal-card-position hc-mb-1">Co-founde</div>
+                          <p class="modal-card-text">Co-founder of Highland Capital and a member of the Investment
+                            Committee.
+                            10 years of investing experience in Kyrgyzstan and abroad. Formerly with Farallon Capital
+                            Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-card-name hc-mb-1">Cholpon Jumashukurov</div>
-                  <div class="modal-card-position hc-mb-1">Co-founde</div>
-                  <p class="modal-card-text">Co-founder of Highland Capital and a member of the Investment Committee.
-                    10 years of investing experience in Kyrgyzstan and abroad. Formerly with Farallon Capital
-                    Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -670,6 +720,10 @@
   </script>
   <script src="./js/core.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

@@ -1024,6 +1024,7 @@ button:focus {
   justify-content: flex-end;
   width: 100%;
   display: flex;
+  z-index: 200;
 }
 
 .hc-btn-hover:hover {
@@ -1038,5 +1039,11 @@ button:focus {
 }
 
 .modal-card-image {
-  transform: translate(-32px, -32px)
+  transform: translate(-32px, -32px);
+  animation: cardImage .7s ease-in-out;
 }
+
+@keyframes cardImage {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-32px, -32px); }
+ }

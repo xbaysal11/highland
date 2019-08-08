@@ -15,7 +15,6 @@ window.addEventListener('scroll', function(event) {
     layer.style.transform = translate3d;
   }
 });
-
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     loop: false,
@@ -24,4 +23,8 @@ $(document).ready(function(){
     center: false,
     nav: true,
   });
+});
+
+$("#myCarousel").carousel({
+  interval: false
 });
