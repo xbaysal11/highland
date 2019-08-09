@@ -82,3 +82,9 @@ $(window).scroll(function(){
       $('.header-top-menu').removeClass('fixed-header');
   }
 });
+
+//page pilling
+
+// $(document).ready(function() {
+// 	$('#pagepiling').pagepiling();
+// });
