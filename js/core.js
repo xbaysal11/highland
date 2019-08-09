@@ -71,3 +71,14 @@ $('#closeBtn').click(function() {
   $(this).css('display', 'none');
   $('#subBtn').css('display', 'block');
 })
+
+//fixed header
+
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 800) {
+      $('.header-top-menu').addClass('fixed-header');
+  }
+  else {
+      $('.header-top-menu').removeClass('fixed-header');
+  }
+});
