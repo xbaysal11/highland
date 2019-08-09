@@ -55,9 +55,19 @@ function myFunction(){
   document.getElementById("filesInfo").innerHTML = txt;
 }
 
-var formSub = document.getElementById('formSub');
-var formSuccess = document.getElementById('formSuccess');
-var subBtn = document.getElementById('subBtn');
-if (subBtn.click()) {
-  console.log('fdf');
-}
+var formSub = $('#formSub');
+var formSuccess = $('#formSuccess');
+var subBtn = $('subBtn');
+$('#subBtn').click(function() {
+  formSub.css('display', 'none');
+  formSuccess.css('display', 'block');
+  $('#closeBtn').css('display', 'block');
+  $(this).css('display', 'none');
+})
+
+$('#closeBtn').click(function() {
+  formSub.css('display', 'block');
+  formSuccess.css('display', 'none');
+  $(this).css('display', 'none');
+  $('#subBtn').css('display', 'block');
+})
