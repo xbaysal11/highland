@@ -126,3 +126,12 @@ $(document).ready(function () {
     }, 1500);
   });
 });
+
+document.body.onload = function() {
+  setTimeout(() => {
+    var preloader = document.getElementById('HcPreloader');
+    if (!preloader.classList.contains('preloader-done')) {
+      preloader.classList.add('preloader-done');
+    }
+  }, 3000);
+}
