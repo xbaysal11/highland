@@ -92,7 +92,7 @@ $('#closeBtn').click(function () {
 //fixed header
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= 800) {
+  if ($(window).scrollTop() >= 600) {
     $('.header-top-menu').addClass('fixed-header');
   } else {
     $('.header-top-menu').removeClass('fixed-header');

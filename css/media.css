@@ -91,10 +91,37 @@
 }
 
 @media (max-width: 1024px) {
+  .line-center {
+    text-align: center;
+  }
+  .line-center .line {
+    display: inline-block;
+  }
   .country-info-item {
     width: 27%;
     margin-right: 30px;
     margin-bottom: 32px;
+  }
+
+  .investment-right img {
+    width: 100%;
+  }
+
+  .investment-column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .investment-left {
+    max-width: 696px;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+  .investment-block {
+    padding: 64px 0;
+  }
+  .investment-title {
+    font-size: 48px;
+    text-align: center;
   }
 
   .contact-blocks {
@@ -151,6 +178,25 @@
     padding: 64px 33px;
   }
 }
+@media (max-width: 960px) {
+  .tools-items {
+    flex-wrap: wrap;
+  }
+  .tools-info-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .tools-info-list {
+    max-width: none;
+  }
+  .modal-dialog {
+    margin-top: 18%;
+  }
+  .slider-title {
+    font-size: 40px;
+  }
+}
 
 @media (max-width: 850px) {
   .header-nav {
@@ -191,6 +237,30 @@
 }
 
 @media (max-width: 767px) {
+  .accordeon-items {
+    padding: 33px;
+  }
+  .hc-card .card-body {
+    padding: 32px;
+  }
+  .collapse-column {
+    flex-direction: column;
+  }
+  .collapse-column .inner-tab-list {
+    margin-bottom: 24px;
+  }
+  .collapse-column .inner-tab-list:last-child {
+    margin-bottom: 0;
+  }
+  .tools-column {
+    flex-direction: column;
+    padding: 0 33px;
+  }
+
+  .tools-column .inner-tab-list {
+    max-width: none;
+    margin-bottom: 24px;
+  }
   .rising {
     padding: 40px 0;
   }
@@ -291,7 +361,9 @@
   .nav {
     flex-direction: column;
   }
-
+  .slider-wrapper .owl-nav {
+    top: -20%!important;
+  }
   .hc-tab-label {
     padding: 24px 0;
   }
@@ -369,10 +441,57 @@
 }
 
 @media (max-width: 550px) {
+  .tools-info-title {
+    font-size: 24px;
+  }
+  .hc-card-title {
+    justify-content: center!important;
+    padding: 19px 30px;
+  }
+  .hc-card-number {
+    margin-bottom: 8px;
+    width: 24px;
+    height: 24px;
+    color: #35425B;
+  }
+  .hc-card[aria-expanded="true"] .hc-card-number {
+    color: #fff;
+  }
+  .accordeon-items {
+    padding: 40px 0;
+  }
+  .hc-card-link {
+    margin-left: 0;
+  }
+  .column-sm {
+    flex-direction: column;
+  }
+  .hc-card {
+    position: relative;
+  }
+  .toggle-plus {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  .hc-card-link {
+    font-size: 16px;
+  }
   .slider-title {
     font-size: 36px;
   }
-
+  .tools-info {
+    padding: 40px 0;
+  }
+  .tools-items {
+    margin-bottom: 20px;
+  }
+  .tools-text {
+    font-size: 16px;
+  }
+.tools-info-title {
+  font-size: 24px;
+}
   .hc-slide-date,
   .hc-slide-title {
     font-size: 16px;
@@ -438,6 +557,23 @@
 }
 
 @media (max-width: 480px) {
+  .hc-card .card-body {
+    padding: 16px;
+  }
+  .tools-column {
+    padding: 0;
+  }
+  .tools-text-bg {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .investment-title {
+    font-size: 24px;
+  }
+  .investment-block {
+    padding: 40px 0;
+    background-position: 100% 175%;
+  }
   .country-info-item {
     width: 100%;
     display: flex;
