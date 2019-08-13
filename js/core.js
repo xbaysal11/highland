@@ -99,13 +99,17 @@ $(window).scroll(function () {
   }
 });
 
+$('.blade').each(function(){
+  $(this).data('cutOff', $(this).height() * 0.1 + $(this).offset().top)
+ });
+
 $(window).on("scroll", function () {
    var scrollVal = $(this).scrollTop();
-   
+
    $('.blade').each(function(index){
-  	 if(scrollVal > 1) {
-   			if($(this).data('cutOffReached') == false && (index <=$('.blade').length -1)){
-        	  $('html, body').animate({
+     if(scrollVal>=$(this).data('cutOff')) {
+            if($(this).data('cutOffReached') == false && (index <=$('.blade').length -1)){
+              $('html, body').animate({
                 scrollTop: $(this).next().offset().top
             }, 1000);
             $(this).data('cutOffReached', true);
@@ -113,7 +117,7 @@ $(window).on("scroll", function () {
      }else {
           $(this).data('cutOffReached', false)
      } 
- 	});
+    });
 }); 
 
 $(document).ready(function () {
@@ -128,10 +132,23 @@ $(document).ready(function () {
 });
 
 document.body.onload = function() {
-  setTimeout(() => {
-    var preloader = document.getElementById('HcPreloader');
-    if (!preloader.classList.contains('preloader-done')) {
-      preloader.classList.add('preloader-done');
-    }
-  }, 3000);
+  var preloader = document.getElementById('HcPreloader');
+  if (!preloader.classList.contains('preloader-done')) {
+    preloader.classList.add('preloader-done');
+  }
+}
+
+// Get the container element
+var btnContainer = document.getElementById("nav");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("hc-btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
