@@ -362,8 +362,20 @@
     flex-direction: column;
   }
   .slider-wrapper .owl-nav {
-    top: -20%!important;
+    top: -35%;
   }
+  .slider-wrapper .owl-next {
+    background: url('../icons/right_arrow-m.svg') 0 0 no-repeat!important;
+    width: 32px;
+    height: 32px;
+  }
+  .slider-wrapper .owl-prev {
+    background: url('../icons/right_arrow-m.svg') 0 0 no-repeat !important;
+    width: 32px;
+    height: 32px;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
   .hc-tab-label {
     padding: 24px 0;
   }
@@ -508,7 +520,7 @@
 
   .slider-wrapper .owl-nav {
     position: absolute;
-    top: -36%;
+    top: -28%;
     right: 3%;
   }
 

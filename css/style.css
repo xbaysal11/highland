@@ -36,6 +36,10 @@ b {
   --mb-6: 60px;
 }
 
+.hc-pt-font {
+  font-family: var(--f-pt-sans);
+}
+
 .hc-title-md {
   font-weight: bold;
   font-size: var(--font-md-2);
@@ -284,13 +288,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.fixed-header {
   z-index: 2000;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   background: var(--dark-blue);
+}
+
+.fixed-header .header-nav, .logo,   .header-lang-panel{
+  visibility: visible!important;
 }
 
 .header-title-block {
@@ -1183,6 +1188,7 @@ button:focus {
 }
 
 .video-section .modal {
+  z-index: 5000;
   background: var(--color-dark-2);
 }
 
@@ -1944,6 +1950,7 @@ margin-bottom: 24px;
   font-weight: bold;
   font-size: 20px;
   display: -webkit-box;
+  color: #101B29;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -1953,7 +1960,6 @@ margin-bottom: 24px;
       -ms-flex-align: center;
           align-items: center;
   width: 40px;
-  color: white;
   background: #F0F4F8;
   border-radius: 50%;
   height: 40px;

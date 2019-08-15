@@ -20,28 +20,28 @@ window.addEventListener('scroll', function (event) {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: false,
-    items: 3,
+    items: 2,
     margin: 72,
     center: false,
     nav: true,
-    responsive : {
+    responsive: {
       // breakpoint from 0 up
-      0 : {
+      0: {
         items: 1,
         stagePadding: 15,
       },
       // breakpoint from 480 up
-      480 : {
+      480: {
         items: 1,
         stagePadding: 15,
       },
       // breakpoint from 768 up
-      768 : {
-          items: 2,
-          stagePadding: 15,
-          margin: 40,
+      768: {
+        items: 2,
+        stagePadding: 15,
+        margin: 40,
       }
-  }
+    }
   });
 });
 
@@ -92,46 +92,37 @@ $('#closeBtn').click(function () {
 //fixed header
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= 600) {
+  if ($(window).scrollTop() >= 300) {
     $('.header-top-menu').addClass('fixed-header');
   } else {
     $('.header-top-menu').removeClass('fixed-header');
   }
 });
 
-$('.blade').each(function(){
+$('.blade').each(function () {
   $(this).data('cutOff', $(this).height() * 0.1 + $(this).offset().top)
- });
+});
 
 $(window).on("scroll", function () {
-   var scrollVal = $(this).scrollTop();
+  var scrollVal = $(this).scrollTop();
 
-   $('.blade').each(function(index){
-     if(scrollVal>=$(this).data('cutOff')) {
-            if($(this).data('cutOffReached') == false && (index <=$('.blade').length -1)){
-              $('html, body').animate({
-                scrollTop: $(this).next().offset().top
-            }, 1000);
-            $(this).data('cutOffReached', true);
-          }        
-     }else {
-          $(this).data('cutOffReached', false)
-     } 
-    });
-}); 
-
-$(document).ready(function () {
-  $("#menu").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({
-      scrollTop: top
-    }, 1500);
+  $('.blade').each(function (index) {
+    if (scrollVal >= $(this).data('cutOff')) {
+      if ($(this).data('cutOffReached') == false && (index <= $('.blade').length - 1)) {
+        $('html, body').animate({
+          scrollTop: $(this).next().offset().top
+        }, 1000);
+        $(this).data('cutOffReached', true);
+      }
+    } else {
+      $(this).data('cutOffReached', false)
+    }
   });
 });
 
-document.body.onload = function() {
+
+
+document.body.onload = function () {
   var preloader = document.getElementById('HcPreloader');
   if (!preloader.classList.contains('preloader-done')) {
     preloader.classList.add('preloader-done');
@@ -146,7 +137,7 @@ var btns = btnContainer.getElementsByClassName("hc-btn");
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
