@@ -20,7 +20,7 @@ window.addEventListener('scroll', function (event) {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: false,
-    items: 2,
+    items: 3,
     margin: 72,
     center: false,
     nav: true,
@@ -38,6 +38,11 @@ $(document).ready(function () {
       // breakpoint from 768 up
       768: {
         items: 2,
+        stagePadding: 15,
+        margin: 40,
+      },
+      1200: {
+        items: 3,
         stagePadding: 15,
         margin: 40,
       }
