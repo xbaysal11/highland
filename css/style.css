@@ -767,7 +767,7 @@ header {
 }
 
 .team-card {
-  width: 25%;
+  width: 100%;
   max-width: 280px;
   margin-bottom: 32px;
   cursor: pointer;
