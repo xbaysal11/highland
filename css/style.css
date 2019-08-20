@@ -680,7 +680,8 @@ header {
 }
 
 .hc-parallax {
-  min-height: 900px;
+  padding-top: 96px;
+  min-height: 996px;
   position: relative;
   overflow: hidden;
   background: url("../img/team-block/parallax/back_mount.png");
@@ -689,19 +690,20 @@ header {
 .hc-layer-1 {
   background: url("../img/team-block/parallax/front_mountains.png");
   background-position: center center;
-  height: 850px;
+  min-height: 850px;
   width: 100%;
   position: absolute;
-  bottom: -214px;
+  bottom: -284px;
   left: 0;
   z-index: 1;
 }
 
 .hc-layer-3 {
   background: url("../img/team-block/parallax/clouds.png");
-  height: 1018px !important;
+  height: 1083px !important;
   position: absolute;
   bottom: -118%;
+  background-position: center;
   z-index: 2;
 }
 
@@ -714,14 +716,31 @@ header {
   left: 0;
   right: 0;
   position: absolute;
-  bottom: -180px;
+  bottom: -136px;
 }
 
 .hc-layer {
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 900px;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .team-title {

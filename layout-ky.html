@@ -439,9 +439,13 @@
   </section><!-- /VIDEO SECTION -->
   <section class="hc-parallax-block">
     <div class="hc-parallax">
-      <div class="hc-layer hc-layer-1"></div>
-      <div class="hc-layer hc-layer-3" data-depth="0.24" data-type="parallax"></div>
-      <div class="hc-layer hc-layer-4" data-depth="0.20" data-type="parallax"></div>
+      <div class="parallax hc-layer">
+        <div class=" parallax-layer hc-layer-1" data-turbo-parallax="{'zoom': 1.05, 'depth': 80}"></div>
+      </div>
+      <div class="hc-layer hc-layer-4" data-depth="0.22" data-type="parallax"></div>
+      <div class="parallax hc-layer" data-depth="0.13" data-type="parallax">
+        <div class="parallax-layer  hc-layer-3" data-turbo-parallax="{'zoom': 1.4, 'depth': 10}"></div>
+      </div>
       <div class="team-block-title wow fadeInUp">
         <div class="team-block-wrapper">
           <h4 class="team-title">Командасы</h4>
@@ -1067,10 +1071,14 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="./js/wow.min.js"></script>
   <script src="./js/vivus.min.js"></script>
+  <script src="./js/turbo-parallax.js"></script>
   <script>
     new WOW({
       offset: 250,
     }).init();
+  </script>
+  <script>
+    let parallax = new TurboParallax();
   </script>
   <script>
     const config_vivus = `type: 'oneByOne',
