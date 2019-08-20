@@ -60,16 +60,20 @@
   .hc-layer-3 {
     bottom: -250%;
   }
+  .header-top-menu {
+    padding: 24px 33px;
+  }
   .header-nav {
     display: none;
   }
-
   .menu-wrap {
     display: block;
   }
-
-  .header-top-menu {
-    padding: 24px 33px;
+  .lang-desk {
+    display: none;
+  }
+  .lang-mobile {
+    display: block;
   }
 }
 
@@ -706,10 +710,6 @@
     font-size: 16px;
   }
 
-  .lang-desk {
-    display: none;
-  }
-
   .inner-tab-list li {
     font-size: var(--font-base);
     line-height: 24px;
@@ -769,10 +769,6 @@
   .about-country-block {
     padding-right: 0;
     padding-left: 0;
-  }
-
-  .lang-mobile {
-    display: block;
   }
 
   .country-image-1 {
