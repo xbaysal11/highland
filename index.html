@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  <header class="header blade" id="header">
+  <header class="header" id="header">
     <div class="bg-header">
       <video id="videobg" preload="metadata" loop autoplay muted>
         <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
@@ -48,11 +48,11 @@
             <a class="wow slideInLeft logo" data-wow-duration="2s" href="/"><img src="./img/Logo.svg" alt="logo"></a>
             <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
               <ul id="nav" class="d-flex">
-                <li><a href="#">about us</a></li>
-                <li><a class="hc-btn" href="#team">team</a></li>
-                <li><a class="hc-btn" href="#aboutKY">About Kyrgyzstan</a></li>
-                <li><a class="hc-btn" href="#news">News</a></li>
-                <li><a class="hc-btn" href="#contacts">Contacts</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#aboutKY">About Kyrgyzstan</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contacts">Contacts</a></li>
               </ul>
             </nav>
           </div><!-- navigation -->
@@ -62,33 +62,32 @@
               <a href="#">ru</a>
               <a href="#">kg</a>
             </div>
-            <div class="menu-wrap">
-              <input type="checkbox" class="toggler">
-              <div class="hamburger">
-                <div></div>
-              </div>
-              <div class="menu">
+          </div><!-- lang-panel -->
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+              <div></div>
+            </div>
+            <div class="menu">
+              <div>
                 <div>
-                  <div>
-                    <a href="/" class="d-block logo-mobile hc-mb-14 mr-0"><img src="./icons/logo-mobile.svg"
-                        alt="logo"></a>
-                    <ul>
-                      <li><a href="#about">about us</a></li>
-                      <li><a href="#team">team</a></li>
-                      <li><a href="#aboutKY">About Kyrgyzstan</a></li>
-                      <li><a href="#news">News</a></li>
-                      <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                    <div class="lang-mobile">
-                      <a href="#">en</a>
-                      <a href="#">ru</a>
-                      <a href="#">kg</a>
-                    </div>
+                  <a href="/" class="d-block logo-mobile hc-mb-14 mr-0"><img src="./icons/logo-mobile.svg" alt="logo"></a>
+                  <ul class="nav-mobile">
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#aboutKY">About Kyrgyzstan</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                  </ul>
+                  <div class="lang-mobile">
+                    <a href="#">en</a>
+                    <a href="#">ru</a>
+                    <a href="#">kg</a>
                   </div>
                 </div>
               </div>
-            </div><!-- mobile navigation -->
-          </div>
+            </div>
+          </div><!-- mobile navigation -->
         </div>
       </div>
     </div><!-- /header-top-menu -->
@@ -100,7 +99,7 @@
       </div>
     </div>
   </header><!-- /header -->
-  <section class="about-us hc-dark-blue bg-white" id="about">
+  <section class="about-us page-section hc-dark-blue bg-white" id="about">
     <div class="container">
       <div class="d-flex about-us-column justify-content-between">
         <div class="about-us-leftside wow fadeInUp">
@@ -385,16 +384,17 @@
       </div>
     </div>
   </section><!-- /VIDEO SECTION -->
-  <section class="hc-parallax-block">
+  <section class="hc-parallax-block" id="team">
     <div class="hc-parallax wow slideInUp">
       <div class="hc-layer hc-layer-1"></div>
       <div class="hc-layer hc-layer-3" data-depth="0.24" data-type="parallax"></div>
       <div class="hc-layer hc-layer-4" data-depth="0.20" data-type="parallax"></div>
       <div class="team-block-title">
         <div class="team-block-wrapper">
-          <h4 class="team-title">Team</h4>
+          <h4 class="team-title page-section">Team</h4>
           <div class="line line-team"></div>
-          <p class="team-block-text">The Highland team is run by a team of seasoned investment professionals that
+          <p class="team-block-text">The Highland team is #myModalrun by a team of seasoned investment professionals
+            that
             combine best western practice with intimate local knowledge. The team started its operations in Bishkek in
             June 2014 and has a successfully history of sourcing, evaluating, and executing investments in Kyrgyzstan.
             As a result of Highland’s previous work in researching, reviewing and funding investment projects, Highland
@@ -404,7 +404,7 @@
       </div>
     </div>
   </section><!-- /hc-parallax-block -->
-  <section class="team-section bg-white" id="team">
+  <section class="team-section bg-white">
     <div class="container">
       <!-- The Modal -->
       <div class="modal fade" id="card-1">
@@ -436,7 +436,10 @@
                           <p class="modal-card-text">Co-founder of Highland Capital and a member of the Investment
                             Committee.
                             10 years of investing experience in Kyrgyzstan and abroad. Formerly with Farallon Capital
-                            Management, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.</p>
+                            Management, McKinsey & Co, Goldman Sachs. MBA from Harvard BusinesManagement, McKinsey & Co,
+                            Goldman Sachs. MBA from Harvard BusinesManagement, McKinsey & Co, Goldman Sachs. MBA from
+                            Harvard BusinesManagement, McKinsey & Co, Goldman Sachs. MBA from Harvard Business School.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -553,7 +556,7 @@
       </div>
     </div>
   </section><!-- /team-section -->
-  <section class="about-country-block" id="aboutKY">
+  <section class="about-country-block page-section" id="aboutKY">
     <div class="container">
       <div class="d-flex justify-content-between country-column">
         <div class="about-country-leftside wow fadeInLeft">
@@ -698,7 +701,7 @@
       </div>
     </div>
   </section><!-- rising section -->
-  <section class="section-slider font-weight-bold" id="news">
+  <section class="section-slider page-section font-weight-bold" id="news">
     <div class="container mb-6">
       <h4 class="slider-title wow slideInLeft">News</h4>
     </div>
@@ -823,7 +826,7 @@
       </div>
     </div>
   </section><!-- section slider -->
-  <section class="contact-section" id="contacts">
+  <section class="contact-section page-section" id="contacts">
     <div class="container">
       <div class="d-flex justify-content-between contact-blocks">
         <div class="contact-section-leftside wow fadeInLeft">

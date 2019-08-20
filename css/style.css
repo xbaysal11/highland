@@ -246,20 +246,19 @@ header {
   font-size: var(--font-base);
 }
 
-.header-nav ul li a.active {
+.active-menu {
   position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.header-nav ul li a.active::before {
+.active-menu::before {
   content: '';
   position: absolute;
   top: -158%;
   left: 0;
   width: 100%;
   height: 4px;
-  opacity: 1;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
   background: var(--color-gold);
 }
 
@@ -1235,10 +1234,15 @@ button:focus {
 
 .team-section .modal-body {
   padding: 0;
+  height: 100%;
 }
 
 .modal-card-rightside {
   padding: 72px 32px 32px;
+}
+
+.card-carousel {
+  height: 100%;
 }
 
 .modal-card-name {
@@ -1668,6 +1672,27 @@ button:focus {
   display: none;
 }
 
+.lang-mobile a:first-child {
+  margin-left: 0;
+}
+
+.lang-mobile a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  font-size: var(--font-base);
+  margin-left: 16px;
+  font-family: var(--f-pt-sans);
+}
+
+.lang-mobile a:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+
 .logo-mobile {
   padding: 0 40px;
   margin-bottom: 48px;
@@ -1985,6 +2010,10 @@ button:focus {
   background: var(--color-gold);
 }
 
+.modal[aria-modal="false"] .header {
+  opacity: 0;
+}
+
 .toggle-plus {
   width: 24px;
   height: 24px;
@@ -2069,4 +2098,11 @@ button:focus {
   top: 0;
   right: 0;
   z-index: 6000;
+}
+
+.nav-mobile li a {
+  font-family: var(--f-montserrat);
+  font-size: var(--font-base);
+  color: var(--color-grey);
+  text-transform: uppercase;
 }

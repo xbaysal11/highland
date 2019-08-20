@@ -460,6 +460,12 @@
 }
 
 @media (max-width: 550px) {
+  .slider-wrapper .modal-content {
+    border: none;
+  }
+  .slider-wrapper .modal {
+    padding-right: 0!important;
+  }
   .pos-top {
     display: block;
   }
@@ -624,8 +630,6 @@
   }
   .carousel-item-content {
     padding: 0 16px;
-    max-height: 700px;
-    overflow: hidden;
   }
   .section-slider .modal-dialog {
     width: 100%;

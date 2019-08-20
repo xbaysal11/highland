@@ -104,29 +104,6 @@ $(window).scroll(function () {
   }
 });
 
-$('.blade').each(function () {
-  $(this).data('cutOff', $(this).height() * 0.1 + $(this).offset().top)
-});
-
-$(window).on("scroll", function () {
-  var scrollVal = $(this).scrollTop();
-
-  $('.blade').each(function (index) {
-    if (scrollVal >= $(this).data('cutOff')) {
-      if ($(this).data('cutOffReached') == false && (index <= $('.blade').length - 1)) {
-        $('html, body').animate({
-          scrollTop: $(this).next().offset().top
-        }, 1000);
-        $(this).data('cutOffReached', true);
-      }
-    } else {
-      $(this).data('cutOffReached', false)
-    }
-  });
-});
-
-
-
 document.body.onload = function () {
   var preloader = document.getElementById('HcPreloader');
   if (!preloader.classList.contains('preloader-done')) {
@@ -134,17 +111,35 @@ document.body.onload = function () {
   }
 }
 
-// Get the container element
-var btnContainer = document.getElementById("nav");
 
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("hc-btn");
+$(document).ready(function() {
+  $('#nav li a').bind('click', function(e) {
+      e.preventDefault();
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+      var target = $(this).attr("href");
+      $('html, body').stop().animate({
+          scrollTop: $(target).offset().top
+      }, 2000, function() {
+          location.hash = target;
+      });
+      return false;
   });
-}
+});
+
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop() + 100;
+  $('.page-section').each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+          $('#nav li a.active-menu').removeClass('active-menu');
+          $('#nav li a').eq(i).addClass('active-menu');
+      }
+  });
+}).scroll();
+
+$('.modal').on('shown.bs.modal', function() {
+  $('.header-top-menu').css('opacity', 0);
+})
+
+$('.modal').on('hide.bs.modal', function() {
+  $('.header-top-menu').css('opacity', 1);
+})
