@@ -46,9 +46,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <a class="wow slideInLeft" data-wow-duration="2s" href="/"><img src="./img/Logo.svg" alt="logo"></a>
-            <nav
-              class="header-nav wow slideInDown"
-              data-wow-duration="2s" id="menu">
+            <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
               <ul class="d-flex">
                 <li><a href="#about">о нас</a></li>
                 <li><a href="#team">команда</a></li>
@@ -57,7 +55,7 @@
                 <li><a href="#news">новости</a></li>
                 <li><a href="#contacts">контакты</a></li>
               </ul>
-            </navclass="header-nav>
+              </navclass="header-nav>
           </div><!-- navigation -->
           <div class="header-lang-panel d-flex align-items-center wow slideInRight" data-wow-duration="2s">
             <div class="lang-desk">
@@ -98,19 +96,14 @@
     </div><!-- /header-top-menu -->
     <div class="header-title-block">
       <div class="container">
-        <h1
-          class="header-title wow fadeInDown"
-          data-wow-duration="2s">Highland Capital</h1>
-        <p
-        class="header-title-text wow fadeInDown"
-        data-wow-duration="3s">Вместе к новым вершинам!</p>
+        <h1 class="header-title wow fadeInDown" data-wow-duration="2s">Highland Capital</h1>
+        <p class="header-title-text wow fadeInDown" data-wow-duration="3s">Вместе к новым вершинам!</p>
       </div>
     </div>
   </header><!-- /header -->
   <section class="about-us hc-dark-blue bg-white" id="about">
     <div class="container">
-      <div
-        class="d-flex about-us-column justify-content-between">
+      <div class="d-flex about-us-column justify-content-between">
         <div class="about-us-leftside wow fadeInUp">
           <h2 class="about-us-title hc-dark-blue">О нас</h2>
           <div class="line"></div>
@@ -142,32 +135,40 @@
         </div><!-- rightside -->
       </div>
     </div><!-- container about-us -->
-    <div class="about-us-info wow slideInUp">
+    <div class="about-us-info">
       <div class="container">
         <div class="d-flex justify-content-between info-items">
-          <div class="info-item">
-            <div class="info-item-icon"><img src="./icons/about-block/case.svg" alt=""></div>
+          <div class="info-item wow fadeInUp">
+            <div class="info-item-icon">
+              <div id="case_vivus" class="info-item-icon-svg"></div>
+            </div>
             <div>
               <div class="info-item-title">$15 млн</div>
               <p class="info-item-text">Привлеченный капитал</p>
             </div>
           </div>
-          <div class="info-item">
-            <div class="info-item-icon"><img src="./icons/about-block/social.svg" alt=""></div>
+          <div class="info-item wow fadeInUp">
+            <div class="info-item-icon">
+              <div id="social_vivus" class="info-item-icon-svg"></div>
+            </div>
             <div>
               <div class="info-item-title">32%</div>
               <p class="info-item-text">IRR по инвестициям</p>
             </div>
           </div>
-          <div class="info-item">
-            <div class="info-item-icon"><img src="./icons/about-block/capital.svg" alt=""></div>
+          <div class="info-item wow fadeInUp">
+            <div class="info-item-icon">
+              <div id="capital_vivus" class="info-item-icon-svg"></div>
+            </div>
             <div>
               <div class="info-item-title">$1.3 млн</div>
               <p class="info-item-text">Инвестированного капитала</p>
             </div>
           </div>
-          <div class="info-item">
-            <div class="info-item-icon"><img src="./icons/about-block/investments.svg" alt=""></div>
+          <div class="info-item wow fadeInUp">
+            <div class="info-item-icon">
+              <div id="invest_vivus" class="info-item-icon-svg"></div>
+            </div>
             <div>
               <div class="info-item-title">3 инвестиции</div>
               <p class="info-item-text">Завершенные сделки</p>
@@ -399,13 +400,14 @@
       </video>
       <div class="video-overlay"></div>
       <div class="video-title-block d-flex align-items-center justify-content-center">
-        <div class="video-title-wrapper">
-          <h3 class="video-title mb-5 wow zoomIn">Проект Тойбосс</h3>
-          <div class="mb-5 wow flipInX">
+        <div class="video-title-wrapper wow fadeInUp">
+          <h3 class="video-title mb-5">Проект Тойбосс</h3>
+          <div class="mb-5">
             <button type="button" class="btn hc-play" data-toggle="modal" data-target="#myModal">
             </button>
           </div>
-          <p class="item-text-block text-white wow slideInUp">Фонд Highland Capital нацелен на предоставление капитала для расширения
+          <p class="item-text-block text-white">Фонд Highland Capital нацелен на предоставление капитала
+            для расширения
             и поддержки бизнеса в Кыргызстане. Фонд предоставляет акционерный капитал и мезонинное финансирование МСБ,
             помогая компаниям вырасти в региональных чемпионов.</p>
         </div>
@@ -435,11 +437,11 @@
     </div>
   </section><!-- /VIDEO SECTION -->
   <section class="hc-parallax-block">
-    <div class="hc-parallax wow slideInUp">
+    <div class="hc-parallax">
       <div class="hc-layer hc-layer-1"></div>
       <div class="hc-layer hc-layer-3" data-depth="0.24" data-type="parallax"></div>
       <div class="hc-layer hc-layer-4" data-depth="0.20" data-type="parallax"></div>
-      <div class="team-block-title">
+      <div class="team-block-title wow fadeInUp">
         <div class="team-block-wrapper">
           <h4 class="team-title">Команда</h4>
           <div class="line line-team"></div>
@@ -523,7 +525,7 @@
           </div><!-- The Modal content -->
         </div><!-- The Modal dialog -->
       </div><!-- The Modal -->
-      <div class="d-flex justify-content-between flex-wrap team-cards wow slideInUp">
+      <div class="d-flex justify-content-between flex-wrap team-cards wow fadeInUp">
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
             <div><img src="./img/team-block/card-1.png" alt="card"></div>
@@ -627,7 +629,7 @@
   </section><!-- investment-block -->
   <section class="tools-info">
     <div class="container">
-      <div class="text-center hc-mb-3 wow zoomIn">
+      <div class="text-center hc-mb-3 wow fadeInUp">
         <h5 class="tools-info-title">Мезонинные инструменты</h5>
         <div class="line hc-light-grey"></div>
         <p class="default-size-1 hc-lh-normal">- представляют из себя гибрид долгового и акционерного финансирования –
@@ -692,7 +694,7 @@
           </ul>
         </div><!-- tools-info-item 3-->
       </div><!-- items -->
-      <div class="tools-wrapper wow slideInUp">
+      <div class="tools-wrapper wow fadeInUp">
         <p class="tools-text">Мезонинное финансирование имеет ряд преимуществ, <br> которые особенно подходят для малых
           и средних бизнесов:</p>
         <div class="d-flex justify-content-between tools-column">
@@ -711,7 +713,7 @@
           </ul>
         </div>
       </div>
-      <div class="tools-text-bg wow zoomInDown">
+      <div class="tools-text-bg wow fadeInUp">
         Более того, в отличие от многих других форм инвестиций, фонды прямых инвестиций, такие как Highland, гораздо
         более заинтересованы в долгосрочном росте своих портфельных компаний. Мы рассматриваем наших портфельных
         компаний в качестве долгосрочных партнеров и делаем все возможное чтобы обеспечить устойчивый рост бизнеса в
@@ -726,8 +728,8 @@
       <div class="line hc-light-grey"></div>
     </div>
     <div class="container">
-      <div id="accordion">
-        <div class="hc-card wow fadeInLeft" data-toggle="collapse" aria-expanded="false" href="#collapseOne">
+      <div id="accordion" class="wow fadeInLeft">
+        <div class="hc-card" data-toggle="collapse" aria-expanded="false" href="#collapseOne">
           <div class="d-flex hc-card-title align-items-center justify-content-between">
             <div class="d-flex align-items-center column-sm">
               <div class="hc-card-number">1</div>
@@ -754,7 +756,7 @@
             </div>
           </div>
         </div><!-- hc-card -->
-        <div class="hc-card wow fadeInLeft" data-toggle="collapse" aria-expanded="false" href="#collapse2">
+        <div class="hc-card" data-toggle="collapse" aria-expanded="false" href="#collapse2">
           <div class="d-flex hc-card-title align-items-center justify-content-between">
             <div class="d-flex align-items-center column-sm">
               <div class="hc-card-number">2</div>
@@ -783,7 +785,7 @@
             </div>
           </div>
         </div><!-- hc-card -->
-        <div class="hc-card wow fadeInLeft" data-toggle="collapse" aria-expanded="false" href="#collapse3">
+        <div class="hc-card" data-toggle="collapse" aria-expanded="false" href="#collapse3">
           <div class="d-flex hc-card-title align-items-center justify-content-between">
             <div class="d-flex align-items-center column-sm">
               <div class="hc-card-number">3</div>
@@ -814,7 +816,7 @@
             </div>
           </div>
         </div><!-- hc-card -->
-        <div class="hc-card wow fadeInLeft" data-toggle="collapse" aria-expanded="false" href="#collapse4">
+        <div class="hc-card" data-toggle="collapse" aria-expanded="false" href="#collapse4">
           <div class="d-flex hc-card-title align-items-center justify-content-between">
             <div class="d-flex align-items-center column-sm">
               <div class="hc-card-number">4</div>
@@ -842,7 +844,7 @@
             </div>
           </div>
         </div><!-- hc-card -->
-        <div class="hc-card wow fadeInLeft" data-toggle="collapse" aria-expanded="false" href="#collapse5">
+        <div class="hc-card" data-toggle="collapse" aria-expanded="false" href="#collapse5">
           <div class="d-flex hc-card-title align-items-center justify-content-between">
             <div class="d-flex align-items-center column-sm">
               <div class="hc-card-number">5</div>
@@ -1051,17 +1053,58 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="./js/core.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="./js/wow.min.js"></script>
+  <script src="./js/vivus.min.js"></script>
   <script>
     new WOW({
       offset: 250,
     }).init();
+  </script>
+  <script>
+    let parallax = new TurboParallax();
+  </script>
+  <script>
+    const config_vivus = `type: 'oneByOne',
+        duration: 4500,
+        // delay: 1,
+        start: "inViewport",
+        pathTimingFunction: "EASE_IN"
+        forceRender: false`;
+
+    var case_vivus = new Vivus(
+      'case_vivus',
+      {
+        config_vivus,
+        file: './icons/about-block/case.svg'
+      }
+    );
+    var social_vivus = new Vivus(
+      'social_vivus',
+      {
+        config_vivus,
+        file: './icons/about-block/social.svg'
+      }
+    );
+    var capital_vivus = new Vivus(
+      'capital_vivus',
+      {
+        config_vivus,
+        file: './icons/about-block/capital.svg'
+      }
+    );
+    var invest_vivus = new Vivus(
+      'invest_vivus',
+      {
+        config_vivus,
+        file: './icons/about-block/investments.svg'
+      }
+    );
   </script>
 </body>
 

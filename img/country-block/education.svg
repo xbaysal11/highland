@@ -1,11 +1,6 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M23.2258 7.80396L1.54834 16.9317V18.4884L23.2258 26.9955H24.7741L46.4516 18.4884V16.9317L24.7741 7.80396H23.2258Z" fill="#CEA45B"/>
-<path d="M25.0838 6.1936H22.9162L0 15.8748V40.3772H3.09677V20.7483L7.24257 22.3814V36.5282C7.63117 36.7145 13.5359 41.8065 24 41.8065C27.6079 41.8163 31.1878 41.1703 34.5646 39.9005V36.5535C26.9433 39.9292 17.2916 39.3747 10.3393 34.8883V23.6005L22.9332 28.5602H25.0668L37.6614 23.5997V38.4644C38.7384 37.8932 39.7731 37.2464 40.7582 36.5289V22.3806L48 19.5292V15.8748L25.0838 6.1936ZM24.4786 25.4524H23.5184L3.74395 17.6647L23.5354 9.30134H24.4646L44.2591 17.6625L24.4786 25.4524Z" fill="#35425B"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="48" height="48" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
+<path d="M37 17.5L24 13L11 17.2353L24 22L37 17.5Z" stroke="#CEA45B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_0"></path>
+<path d="M2 17L24 8L46 17.5L24 27L2 17ZM2 17V39" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_1"></path>
+<path d="M39 21V35" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_2"></path>
+<path d="M9 21V36C21 44 34 37.5 34 37.5" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_3"></path>
+<style data-made-with="vivus-instant">.LJBkjzyo_0{stroke-dasharray:56 58;stroke-dashoffset:57;}.start .LJBkjzyo_0{animation:LJBkjzyo_draw 1096ms ease-in-out 0ms forwards;}.LJBkjzyo_1{stroke-dasharray:118 120;stroke-dashoffset:119;}.start .LJBkjzyo_1{animation:LJBkjzyo_draw 2288ms ease-in-out 1096ms forwards;}.LJBkjzyo_2{stroke-dasharray:14 16;stroke-dashoffset:15;}.start .LJBkjzyo_2{animation:LJBkjzyo_draw 288ms ease-in-out 3384ms forwards;}.LJBkjzyo_3{stroke-dasharray:42 44;stroke-dashoffset:43;}.start .LJBkjzyo_3{animation:LJBkjzyo_draw 826ms ease-in-out 3673ms forwards;}@keyframes LJBkjzyo_draw{100%{stroke-dashoffset:0;}}@keyframes LJBkjzyo_fade{0%{stroke-opacity:1;}95.40229885057471%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
