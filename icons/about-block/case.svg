@@ -1,4 +1,7 @@
-<svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.5 7V21.5339H8.66691V26H14.4897V21.5339H31.5103V26H37.3331V21.5339H44.5V7H1.5Z" fill="#CEA45B"/>
-<path d="M46 8.94118V5.96078H31.6562V0H14.3438V2.98039H28.6884V5.96078H0V23.4944H7.17229V27.965H15.9672V23.4944H30.0328V27.965H38.8277V23.4944H43.0323V35.0196H2.96774V26.4763H0V38H46V11.9216H43.0323V20.514H38.8277V15.9689H30.0328V20.514H15.9672V15.9689H7.17229V20.514H2.96774V8.94118H46ZM33.0005 18.9627H35.86V24.9861H33.0005V18.9627ZM10.14 18.9627H12.9995V24.9861H10.14V18.9627Z" fill="#35425B"/>
-</svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="" class="">
+<path d="M16 6H31V12" stroke="#1B2D43" stroke-width="4" class="PVQXGfWA_0"></path>
+<path d="M48 12H2V28H9V23H15V28H33V23H39V28H46V18" stroke="#1B2D43" stroke-width="4" class="PVQXGfWA_1"></path>
+<path d="M2 28H9V33H15V28H33V33H39V28H46V42H2V33" stroke="#1B2D43" stroke-width="4" class="PVQXGfWA_2"></path>
+<path d="M12 25V31M36 25V31" stroke="#CEA45B" stroke-width="4" class="PVQXGfWA_3"></path>
+<path d="M48 16H4" stroke="#CEA45B" stroke-width="4" class="PVQXGfWA_4"></path>
+<style data-made-with="vivus-instant">.PVQXGfWA_0{stroke-dasharray:21 23;stroke-dashoffset:22;}.start .PVQXGfWA_0{animation:PVQXGfWA_draw 283ms ease-in-out 0ms forwards;}.PVQXGfWA_1{stroke-dasharray:136 138;stroke-dashoffset:137;}.start .PVQXGfWA_1{animation:PVQXGfWA_draw 1766ms ease-in-out 283ms forwards;}.PVQXGfWA_2{stroke-dasharray:131 133;stroke-dashoffset:132;}.start .PVQXGfWA_2{animation:PVQXGfWA_draw 1702ms ease-in-out 2050ms forwards;}.PVQXGfWA_3{stroke-dasharray:12 14;stroke-dashoffset:13;}.start .PVQXGfWA_3{animation:PVQXGfWA_draw 167ms ease-in-out 3752ms forwards;}.PVQXGfWA_4{stroke-dasharray:44 46;stroke-dashoffset:45;}.start .PVQXGfWA_4{animation:PVQXGfWA_draw 580ms ease-in-out 3919ms forwards;}@keyframes PVQXGfWA_draw{100%{stroke-dashoffset:0;}}@keyframes PVQXGfWA_fade{0%{stroke-opacity:1;}95.40229885057471%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
