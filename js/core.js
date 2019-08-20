@@ -143,3 +143,7 @@ $('.modal').on('shown.bs.modal', function() {
 $('.modal').on('hide.bs.modal', function() {
   $('.header-top-menu').css('opacity', 1);
 })
+
+$('.nav-mobile li a').bind('click', function() {
+  document.getElementById('toggler').checked = false;
+});
