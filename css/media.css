@@ -1,12 +1,14 @@
 @media (min-aspect-ratio: 16/9) {
-  #videobg {
+  #videobg,
+  #videobg2 {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  #videobg {
+  #videobg,
+  #videobg2 {
     width: auto;
     height: 100%;
   }
@@ -309,11 +311,6 @@
     bottom: -250px;
   }
 
-  .video-section {
-    background: url("../img/image_bg.png") center center;
-    background-size: cover;
-  }
-
   .video-title {
     font-size: var(--font-md-5);
   }
@@ -330,7 +327,8 @@
     font-size: 16px;
   }
 
-  #videobg {
+  #videobg,
+  #videobg2 {
     display: none;
   }
 

@@ -121,7 +121,12 @@ header {
   width: 100%;
 }
 
-#videobg {
+.video-section {
+  background: url('../img/image_bg.png') center center;
+  background-size: cover;
+}
+
+#videobg, #videobg2 {
   position: fixed;
   z-index: -1;
   width: 100%;
