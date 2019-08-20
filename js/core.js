@@ -127,7 +127,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-  var scrollDistance = $(window).scrollTop() + 100;
+  var scrollDistance = $(window).scrollTop() + 80;
   $('.page-section').each(function(i) {
       if ($(this).position().top <= scrollDistance) {
           $('#nav li a.active-menu').removeClass('active-menu');
