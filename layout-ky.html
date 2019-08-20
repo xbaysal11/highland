@@ -47,7 +47,7 @@
           <div class="d-flex align-items-center">
             <a class="wow slideInLeft" data-wow-duration="2s" href="/"><img src="./img/Logo.svg" alt="logo"></a>
             <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
-              <ul class="d-flex">
+              <ul id="nav" class="d-flex">
                 <li><a href="#about">Биз тууралуу</a></li>
                 <li><a href="#team">Командасы</a></li>
                 <li><a href="#fonds">фонддор жөнүндө</a></li>
@@ -59,9 +59,9 @@
           </div><!-- navigation -->
           <div class="header-lang-panel d-flex align-items-center wow slideInRight" data-wow-duration="2s">
             <div class="lang-desk">
-              <a href="#">en</a>
-              <a href="#">ru</a>
-              <a href="#">kg</a>
+              <a href="./index.html">en</a>
+              <a href="./layout-ru.html">ru</a>
+              <a class="active" href="./layout-ky.html">kg</a>
             </div>
             <div class="menu-wrap">
               <input type="checkbox" class="toggler">
@@ -82,9 +82,9 @@
                       <li><a href="#contacts">Байланыштар</a></li>
                     </ul>
                     <div class="lang-mobile">
-                      <a href="#">en</a>
-                      <a href="#">ru</a>
-                      <a href="#">kg</a>
+                      <a href="./index.html">en</a>
+                      <a href="./layout-ru.html">ru</a>
+                      <a class="active" href="./layout-ky.html">kg</a>
                     </div>
                   </div>
                 </div>
@@ -101,7 +101,7 @@
       </div>
     </div>
   </header><!-- /header -->
-  <section class="about-us hc-dark-blue bg-white" id="about">
+  <section class="about-us page-section hc-dark-blue bg-white" id="about">
     <div class="container">
       <div class="d-flex about-us-column justify-content-between">
         <div class="about-us-leftside wow fadeInUp">
@@ -437,11 +437,15 @@
       </div>
     </div>
   </section><!-- /VIDEO SECTION -->
-  <section class="hc-parallax-block">
+  <section class="hc-parallax-block page-section" id="team">
     <div class="hc-parallax">
-      <div class="hc-layer hc-layer-1"></div>
-      <div class="hc-layer hc-layer-3" data-depth="0.24" data-type="parallax"></div>
-      <div class="hc-layer hc-layer-4" data-depth="0.20" data-type="parallax"></div>
+      <div class="parallax hc-layer">
+        <div class=" parallax-layer hc-layer-1" data-turbo-parallax="{'zoom': 1.05, 'depth': 80}"></div>
+      </div>
+      <div class="hc-layer hc-layer-4" data-depth="0.22" data-type="parallax"></div>
+      <div class="parallax hc-layer" data-depth="0.13" data-type="parallax">
+        <div class="parallax-layer  hc-layer-3" data-turbo-parallax="{'zoom': 1.4, 'depth': 10}"></div>
+      </div>
       <div class="team-block-title wow fadeInUp">
         <div class="team-block-wrapper">
           <h4 class="team-title">Командасы</h4>
@@ -456,7 +460,7 @@
       </div>
     </div>
   </section><!-- /hc-parallax-block -->
-  <section class="team-section bg-white" id="team">
+  <section class="team-section bg-white">
     <div class="container">
       <!-- The Modal -->
       <div class="modal fade" id="card-1">
@@ -605,7 +609,7 @@
       </div>
     </div>
   </section><!-- /team-section -->
-  <section class="investment-block" id="fonds">
+  <section class="investment-block page-section" id="fonds">
     <div class="container">
       <div class="d-flex investment-column">
         <div class="investment-left wow fadeInLeft">
@@ -728,7 +732,7 @@
       </div>
     </div>
   </section><!-- tools -->
-  <section class="accordeon-items" id="work">
+  <section class="accordeon-items page-section" id="work">
     <div class="d-flex flex-column align-items-center ">
       <h5 class="tools-info-title wow fadeInUp">Биз кантип иштейбиз</h5>
       <div class="line hc-light-grey"></div>
@@ -880,7 +884,7 @@
       </div>
     </div>
   </section>
-  <section class="section-slider font-weight-bold" id="news">
+  <section class="section-slider font-weight-bold page-section" id="news">
     <div class="container mb-6">
       <h4 class="slider-title wow slideInLeft">Жанылыктар</h4>
     </div>
@@ -1005,7 +1009,7 @@
       </div>
     </div>
   </section><!-- section slider -->
-  <section class="contact-section" id="contacts">
+  <section class="contact-section page-section" id="contacts">
     <div class="container">
       <div class="d-flex justify-content-between contact-blocks">
         <div class="contact-section-leftside wow fadeInLeft">
@@ -1067,10 +1071,14 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="./js/wow.min.js"></script>
   <script src="./js/vivus.min.js"></script>
+  <script src="./js/turbo-parallax.js"></script>
   <script>
     new WOW({
       offset: 250,
     }).init();
+  </script>
+  <script>
+    let parallax = new TurboParallax();
   </script>
   <script>
     const config_vivus = `type: 'oneByOne',

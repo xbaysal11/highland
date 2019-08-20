@@ -122,11 +122,12 @@ header {
 }
 
 .video-section {
-  background: url('../img/image_bg.png') center center;
+  background: url("../img/image_bg.png") center center;
   background-size: cover;
 }
 
-#videobg, #videobg2 {
+#videobg,
+#videobg2 {
   position: fixed;
   z-index: -1;
   width: 100%;
@@ -216,7 +217,7 @@ header {
 .header-nav ul li {
   margin-right: 24px;
   position: relative;
-  padding: 34px 0px;
+  padding: 24px 0px;
 }
 
 .header-nav ul li::before {
@@ -260,7 +261,7 @@ header {
 .active-menu::before {
   content: "";
   position: absolute;
-  top: -158%;
+  top: -110%;
   left: 0;
   width: 100%;
   height: 4px;
@@ -285,6 +286,12 @@ header {
   text-decoration: underline;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.header-lang-panel .active,
+.lang-mobile .active {
+  color: var(--color-gold);
+  text-decoration: underline;
 }
 
 .fixed-header {
@@ -685,7 +692,8 @@ header {
 }
 
 .hc-parallax {
-  min-height: 900px;
+  padding-top: 96px;
+  min-height: 996px;
   position: relative;
   overflow: hidden;
   background: url("../img/team-block/parallax/back_mount.png");
@@ -694,19 +702,20 @@ header {
 .hc-layer-1 {
   background: url("../img/team-block/parallax/front_mountains.png");
   background-position: center center;
-  height: 850px;
+  min-height: 850px;
   width: 100%;
   position: absolute;
-  bottom: -214px;
+  bottom: -284px;
   left: 0;
   z-index: 1;
 }
 
 .hc-layer-3 {
   background: url("../img/team-block/parallax/clouds.png");
-  height: 1018px !important;
+  height: 1083px !important;
   position: absolute;
   bottom: -118%;
+  background-position: center;
   z-index: 2;
 }
 
@@ -719,14 +728,31 @@ header {
   left: 0;
   right: 0;
   position: absolute;
-  bottom: -180px;
+  bottom: -136px;
 }
 
 .hc-layer {
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 900px;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .team-title {
