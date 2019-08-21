@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  <header class="header blade" id="header">
+  <header class="header blade page-section" id="header">
     <div class="bg-header">
       <video id="videobg" preload="metadata" loop autoplay muted>
         <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
@@ -48,6 +48,7 @@
             <a class="wow slideInLeft" data-wow-duration="2s" href="/"><img src="./img/Logo.svg" alt="logo"></a>
             <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
               <ul id="nav" class="d-flex">
+                <li class="d-none"><a href="#"></a></li>
                 <li><a href="#about">Биз тууралуу</a></li>
                 <li><a href="#team">Командасы</a></li>
                 <li><a href="#fonds">фонддор жөнүндө</a></li>
@@ -55,7 +56,7 @@
                 <li><a href="#news">Жанылыктар</a></li>
                 <li><a href="#contacts">Байланыштар</a></li>
               </ul>
-              </navclass="header-nav>
+            </nav>
           </div><!-- navigation -->
           <div class="header-lang-panel d-flex align-items-center wow slideInRight" data-wow-duration="2s">
             <div class="lang-desk">
@@ -536,7 +537,7 @@
       <div class="d-flex justify-content-between flex-wrap team-cards wow fadeInUp">
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-1.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-1.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Чолпон Жумашукуров</div>
               <span class="card-position">Тең негиздөөчүсү</span>
@@ -545,7 +546,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-2.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-2.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Эльдан Усубакунов</div>
               <span class="card-position">Тең негиздөөчүсү</span>
@@ -554,7 +555,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-3.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-3.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Грег Серрурьер</div>
               <span class="card-position">Инвестициялык комитеттин мүчөсү</span>
@@ -563,7 +564,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-4.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-4.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Кантемир Чалбаев</div>
               <span class="card-position">Инвестициялык директор</span>
@@ -572,7 +573,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-5.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-5.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Джазгулу Райымбекова</div>
               <span class="card-position">Инвестициялар боюнча менеджер</span>
@@ -581,7 +582,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-6.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-6.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Игорь Ким</div>
               <span class="card-position">Инвестициялар боюнча менеджер</span>
@@ -590,7 +591,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-7.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-7.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Сания Исакова</div>
               <span class="card-position">Көз карандысыз эксперт</span>
@@ -599,7 +600,7 @@
         </div><!-- card -->
         <div class="team-card" data-toggle="modal" data-target="#card-1">
           <div class="team-fixed-card">
-            <div><img src="./img/team-block/card-8.png" alt="card"></div>
+            <div class="card-scale"><img src="./img/team-block/card-8.png" alt="card"></div>
             <div class="card-title-block">
               <div class="card-name">Джетиген Сулайманов</div>
               <span class="card-position">Баяндамачы</span>
@@ -1013,7 +1014,7 @@
     <div class="container">
       <div class="d-flex justify-content-between contact-blocks">
         <div class="contact-section-leftside wow fadeInLeft">
-          <h2 class="about-us-title">Биз менен <span class="hc-color-gold">байланышыңыз</span></h2>
+          <h2 class="about-us-title">Биз менен <br><span class="hc-color-gold">байланышыңыз</span></h2>
           <div class="line hc-light-grey"></div>
           <div class="hc-title-md hc-mb-1">Фонддун инвестициялык консультанты</div>
           <p class="about-us-text">Авангард Бизнес Борбору, Бишкек ш., Токтогул к.125/1, 7 кабат</p>
