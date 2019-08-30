@@ -35,7 +35,12 @@ b {
   --mr-2: 24px;
   --mb-6: 60px;
 }
-
+.zoom-80 {
+  zoom: 80%;
+}
+.zoom-70 {
+  zoom: 70%;
+}
 .hc-pt-font {
   font-family: var(--f-pt-sans);
 }
@@ -339,7 +344,7 @@ header {
 
 /* ABOUT BLOCK STYLE */
 .about-us {
-  padding-top: 96px;
+  padding-top: 70px;
 }
 
 .about-us-title {
@@ -418,7 +423,7 @@ header {
 }
 
 .about-us-info {
-  margin-top: 130px;
+  margin-top: 64px;
   padding-bottom: 45px;
   background: var(--color-light-grey);
 }
@@ -494,7 +499,7 @@ header {
   transition: all 0.25s;
   text-align: center;
   font-weight: 600;
-  padding: 34px 0;
+  padding: 31px 0;
   position: relative;
 }
 
@@ -505,6 +510,7 @@ header {
   color: #2c3e50;
   font-family: var(--f-pt-sans);
   padding: 48px;
+  min-height: 448px;
 }
 
 .inner-tab-list {
@@ -552,7 +558,7 @@ header {
 .inner-tab-icon {
   width: 72px;
   height: 72px;
-  background: var(--color-light-grey);
+  /* background: var(--color-light-grey); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,12 +580,12 @@ header {
 
 .tabs-section {
   background: var(--color-grey);
-  padding: 88px 0 117px;
+  padding: 70px 0;
 }
 
 .tabs-section .nav-tabs {
   border-bottom: none;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .tabs-section .nav-tabs .nav-link {
@@ -689,7 +695,8 @@ header {
 
 .hc-parallax {
   padding-top: 96px;
-  min-height: 996px;
+  /* min-height: 996px; */
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background: url("../img/team-block/parallax/back_mount.png");
@@ -710,7 +717,7 @@ header {
   background: url("../img/team-block/parallax/clouds.png");
   height: 1083px !important;
   position: absolute;
-  bottom: -118%;
+  bottom: -100%;
   background-position: center;
   z-index: 2;
 }
@@ -724,7 +731,7 @@ header {
   left: 0;
   right: 0;
   position: absolute;
-  bottom: -136px;
+  bottom: -50%;
 }
 
 .hc-layer {
@@ -759,7 +766,7 @@ header {
 
 .team-block-title {
   position: absolute;
-  top: 0;
+  top: -20%;
   left: 0;
   z-index: 200;
   width: 100%;
@@ -779,6 +786,9 @@ header {
   max-width: 1000px;
   text-align: center;
   margin-bottom: 190px;
+  /* position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); */
 }
 
 .line-team {
@@ -798,6 +808,15 @@ header {
   text-align: center;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+#team-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-cards {
+  margin: 84px auto 0 auto;
+  width: 70%;
 }
 
 .team-card {
@@ -866,7 +885,7 @@ header {
 
 .about-country-block {
   background: var(--color-grey);
-  padding: 120px 112px;
+  padding: 100px 112px 100px 112px;
 }
 
 .about-country-rightside {
@@ -937,7 +956,7 @@ header {
 }
 
 .rising {
-  padding: 88px 0 103px;
+  padding: 88px 0 50px;
 }
 
 .rising-items {
@@ -956,7 +975,7 @@ header {
 .rising-title {
   font-size: var(--font-md-5);
   color: var(--dark-blue);
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .rising-item-name {
@@ -1122,6 +1141,9 @@ header {
   color: var(--color-light-grey);
   padding: 31px 0;
   text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .contact-section-leftside {
@@ -1387,20 +1409,26 @@ button:focus {
 .team-section .carousel-inner {
   overflow: visible;
 }
-
-.section-slider .modal {
+.fp-slides {
+  overflow: unset !important;
+  z-index: 10000;
+}
+.carousel .fp-tableCell {
+  height: 0 !important;
+}
+.slider-wrapper .modal {
   z-index: 5000;
 }
 
-.section-slider .modal-dialog {
+.slider-wrapper .modal-dialog {
   max-width: 976px;
 }
 
-.section-slider .modal-body {
+.slider-wrapper .modal-body {
   padding: 0 0 32px;
 }
 
-.section-slider .close {
+.modal-body .close {
   background: var(--dark-blue);
   padding: 8px 10px;
   opacity: 1;
@@ -2126,6 +2154,7 @@ button:focus {
 
 .hc-parallax-block {
   background: #f0f4f8;
+  position: relative;
 }
 
 .pos-top {
@@ -2144,4 +2173,20 @@ button:focus {
   font-size: var(--font-base);
   color: var(--color-grey);
   text-transform: uppercase;
+}
+.country-info-item {
+  width: 100%;
+}
+#about_us,
+#team-group,
+#rising {
+  background: var(--color-white);
+}
+#tabs,
+#aboutKY,
+#news {
+  background: var(--color-grey);
+}
+#contacts {
+  background: var(--color-light-grey);
 }
