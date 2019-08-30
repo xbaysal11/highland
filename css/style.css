@@ -509,7 +509,7 @@ header {
   background: #fff;
   color: #2c3e50;
   font-family: var(--f-pt-sans);
-  padding: 48px;
+  padding: 40px 48px;
   min-height: 448px;
 }
 
@@ -525,7 +525,7 @@ header {
   font-family: var(--f-pt-sans);
   font-size: var(--font-md-1);
   line-height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding: 0 24px;
   position: relative;
 }
@@ -551,13 +551,13 @@ header {
   color: var(--dark-blue);
   font-weight: bold;
   line-height: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .inner-tab-icon {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   /* background: var(--color-light-grey); */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,7 +575,8 @@ header {
 }
 
 .inner-list-item {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+  width: 48%;
 }
 
 .tabs-section {
@@ -627,8 +628,8 @@ header {
 
 .tab-list-row {
   max-width: none;
-  padding-bottom: 32px;
-  margin-bottom: 32px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
   border-bottom: 1px solid var(--color-light-grey);
 }
 
@@ -638,7 +639,7 @@ header {
 }
 
 .item-rm-icon {
-  padding: 23px 0;
+  padding: 15px 0;
   padding-left: 16px;
   margin-left: 0;
   border-left: 4px solid var(--color-gold);
@@ -1443,8 +1444,7 @@ button:focus {
 
 .carousel-item-content {
   padding: 0 32px;
-  -webkit-overflow-scrolling:touch;
-
+  -webkit-overflow-scrolling: touch;
 }
 
 .inputfile {
@@ -1506,8 +1506,8 @@ button:focus {
 }
 
 .modal-body {
-    max-height: 100%;
-    overflow-y: auto;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 #formSuccess {
