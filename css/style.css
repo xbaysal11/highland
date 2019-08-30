@@ -1163,6 +1163,7 @@ header {
 .contact-section-rightside input {
   width: 100%;
   padding: 15px 16px;
+  -webkit-appearance: none;
   margin-bottom: 24px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1187,6 +1188,7 @@ header {
 .contact-section-rightside textarea {
   padding: 12px 16px;
   resize: none;
+  -webkit-appearance: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -1427,6 +1429,9 @@ button:focus {
 .slider-wrapper .modal-body {
   padding: 0 0 32px;
 }
+.section-slider .modal-body {
+  padding: 0;
+}
 
 .modal-body .close {
   background: var(--dark-blue);
@@ -1438,6 +1443,8 @@ button:focus {
 
 .carousel-item-content {
   padding: 0 32px;
+  -webkit-overflow-scrolling:touch;
+
 }
 
 .inputfile {
@@ -1496,6 +1503,11 @@ button:focus {
   margin-bottom: 32px;
   background: url("../icons/cross.svg") 0 0 no-repeat;
   background-position: right center;
+}
+
+.modal-body {
+    max-height: 100%;
+    overflow-y: auto;
 }
 
 #formSuccess {
