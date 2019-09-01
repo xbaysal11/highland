@@ -62,7 +62,10 @@ b {
   font-family: var(--f-pt-sans);
   font-size: var(--font-md-1);
 }
-
+.default-size-2 {
+  font-family: var(--f-pt-sans);
+  font-size: var(--font-md-2);
+}
 .hc-mb-1 {
   margin-bottom: 16px;
 }
@@ -1409,7 +1412,7 @@ button:focus {
   padding-left: 32px;
 }
 
-.team-section .carousel-inner {
+#myCarousel .carousel-inner {
   overflow: visible;
 }
 .fp-slides {
@@ -1924,7 +1927,7 @@ button:focus {
 }
 
 .investment-block {
-  background: url("../img/triangle-bg.png") 100% 100% no-repeat, var(--color-grey);
+  background-color: var(--color-grey);
   padding: 120px 0;
 }
 
@@ -1949,7 +1952,7 @@ button:focus {
 }
 
 .tools-info-title {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
 }
 
@@ -2043,28 +2046,77 @@ button:focus {
   line-height: 32px;
   margin-bottom: 32px;
 }
-
+#workCarousel .card-body {
+  padding: 56px;
+}
+.modal-work-name {
+  font-size: var(--font-md-4);
+  font-weight: bold;
+}
+.work-text {
+  margin: 24px 0;
+  line-height: 32px;
+  max-width: 600px;
+}
 .accordeon-items {
-  padding: 64px;
   background: #f0f4f8;
+}
+.work-header {
+  margin-top: 10%;
+}
+.accordeon-items .modal {
+  z-index: 5000;
+  background: rgba(000, 000, 000, 0.75);
+}
+
+.accordeon-items .modal-dialog {
+  max-width: 976px;
+}
+
+.accordeon-items .modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.accordeon-items .modal-body {
+  padding: 0;
+  height: 100%;
+}
+
+.work-cards {
+  margin-top: 106px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hc-card {
+  width: 100%;
+  max-width: 220px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 8px 16px rgba(67, 86, 100, 0.08);
-  box-shadow: 0px 8px 16px rgba(67, 86, 100, 0.08);
   cursor: pointer;
-  margin-bottom: 24px;
+  padding: 24px;
+  position: relative;
+  margin: 12px auto;
 }
-
+.hc-card:hover {
+  -webkit-box-shadow: 0px 16px 32px rgba(67, 86, 100, 0.08);
+  box-shadow: 0px 16px 32px rgba(67, 86, 100, 0.08);
+}
+.hc-card-dots {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  right: 16px;
+  top: 16px;
+}
 .hc-card-link {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 32px;
   font-weight: bold;
   color: #1b2d43;
-  margin-left: 16px;
 }
 
-.hc-card-number {
+/* .hc-card-number {
   font-weight: bold;
   font-size: 20px;
   display: -webkit-box;
@@ -2083,6 +2135,13 @@ button:focus {
   height: 40px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+} */
+.hc-card-number {
+  width: 28px;
+  height: 62px;
+  position: relative;
+  top: -64px;
+  /* left: calc(15% - 28px / 2); */
 }
 
 .hc-card[aria-expanded="true"] .hc-card-number {
@@ -2136,8 +2195,6 @@ button:focus {
 }
 
 .hc-card-title {
-  padding: 30px 28px;
-  border-bottom: 1px solid #f0f4f8;
 }
 
 .hc-card .card-body {
@@ -2196,9 +2253,11 @@ button:focus {
 }
 #tabs,
 #aboutKY,
-#news {
+#news,
+#fonds {
   background: var(--color-grey);
 }
-#contacts {
+#contacts,
+#work {
   background: var(--color-light-grey);
 }
