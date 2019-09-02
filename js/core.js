@@ -50,11 +50,7 @@ $(document).ready(function() {
   });
 });
 
-$("#myCarousel").carousel({
-  interval: false
-});
-
-$("#NewsCarousel").carousel({
+$("#myCarousel,#NewsCarousel").carousel({
   interval: false
 });
 
@@ -119,7 +115,7 @@ document.body.onload = function() {
 };
 
 $(document).ready(function() {
-  $("#nav li a").bind("click", function(e) {
+  $("#nav li a, .logo2").bind("click", function(e) {
     e.preventDefault();
 
     var target = $(this).attr("href");
