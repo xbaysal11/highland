@@ -99,12 +99,8 @@ $("#closeBtn").click(function() {
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 300) {
     $(".header-top-menu").addClass("fixed-header");
-    // $(".logo1").addClass("d-none");
-    // $(".logo2").removeClass("d-none");
   } else {
     $(".header-top-menu").removeClass("fixed-header");
-    // $(".logo2").addClass("d-none");
-    // $(".logo1").removeClass("d-none");
   }
   if ($("#header-top-menu").hasClass("fixed-header")) {
     $(".logo1").addClass("d-none");
@@ -167,4 +163,20 @@ $(".modal").on("hide.bs.modal", function() {
 
 $(".nav-mobile li a").bind("click", function() {
   document.getElementById("toggler").checked = false;
+});
+
+var top1 = $("#tabs").offset().top;
+var top2 = $("#video").offset().top;
+var top3 = $("#prlx-block").offset().top;
+var top4 = $("#team-group").offset().top;
+
+$(document).scroll(function() {
+  var scrollPos = $(document).scrollTop();
+  if (scrollPos >= top1 && scrollPos < top2) {
+    $(".fixed-header").removeClass("video-header");
+  } else if (scrollPos >= top2 && scrollPos < top3) {
+    $(".fixed-header").addClass("video-header");
+  } else if (scrollPos >= top3 && scrollPos < top4) {
+    $(".fixed-header").removeClass("video-header");
+  }
 });
