@@ -20,10 +20,22 @@
   .hc-layer-4 {
     bottom: -28%;
   }
+  .zoom-1 {
+    zoom: 100%;
+  }
+  .zoom-2 {
+    zoom: 90%;
+  }
+  .team-block-title {
+    top: -15%;
+  }
 }
 @media (max-width: 1455px) {
   .team-block-title {
     top: 15%;
+  }
+  .team-cards {
+    width: 70%;
   }
 }
 @media (max-width: 1255px) {
@@ -86,10 +98,10 @@
   .logo2 {
     display: none;
   }
-  .zoom-80 {
+  .zoom-1 {
     zoom: 100% !important;
   }
-  .zoom-70 {
+  .zoom-2 {
     zoom: 100% !important;
   }
   .footer {
@@ -106,6 +118,9 @@
   }
   .team-block-title {
     top: 0;
+  }
+  .fixed-header {
+    background: var(--dark-blue);
   }
 }
 
@@ -514,7 +529,11 @@
     padding-left: 0;
     margin: 0;
   }
-
+  .accordeon-items .modal-dialog {
+    padding-left: 0;
+    margin: 0;
+    height: 100%;
+  }
   .video-section .modal-dialog {
     margin: 0;
   }
@@ -532,6 +551,7 @@
 @media (max-width: 550px) {
   .slider-wrapper .modal-content {
     border: none;
+    height: 100%;
   }
   .slider-wrapper .modal {
     padding-right: 0 !important;

@@ -35,10 +35,10 @@ b {
   --mr-2: 24px;
   --mb-6: 60px;
 }
-.zoom-80 {
+.zoom-1 {
   zoom: 80%;
 }
-.zoom-70 {
+.zoom-2 {
   zoom: 70%;
 }
 .hc-pt-font {
@@ -831,7 +831,7 @@ header {
 }
 .team-cards {
   margin: 84px auto 0 auto;
-  width: 70%;
+  /* width: 70%; */
 }
 
 .team-card {
@@ -1235,7 +1235,11 @@ header {
   background: var(--color-gold);
   color: var(--color-white);
 }
-
+.modal-content {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
 button:focus {
   outline: none !important;
   -webkit-box-shadow: none !important;
@@ -2073,7 +2077,7 @@ button:focus {
   background: #f0f4f8;
 }
 .work-header {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 .accordeon-items .modal {
   z-index: 5000;
