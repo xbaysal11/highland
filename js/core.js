@@ -149,7 +149,7 @@ $(window)
   .scroll();
 
 //
-$(".modal").on("shown.bs.modal", function() {
+$(".modal").on("show.bs.modal", function() {
   $(".header-top-menu").css("opacity", 0);
 });
 
