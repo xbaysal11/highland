@@ -27,7 +27,7 @@
     zoom: 90%;
   }
   .team-block-title {
-    top: -15%;
+    top: -5%;
   }
 }
 @media (max-width: 1455px) {
@@ -551,7 +551,9 @@
 @media (max-width: 550px) {
   .slider-wrapper .modal-content {
     border: none;
-    height: 100%;
+  }
+  .modal-content {
+    height: 100vh;
   }
   .slider-wrapper .modal {
     padding-right: 0 !important;
@@ -865,7 +867,7 @@
     font-size: 36px;
   }
   .hc-layer-4 {
-    bottom: -43%;
+    bottom: -58%;
   }
   .hc-layer-3 {
     bottom: -134%;
