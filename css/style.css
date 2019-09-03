@@ -1838,8 +1838,8 @@ button:focus {
 
 .hc-preloader-wrapper {
   position: absolute;
-  width: 200px;
-  height: 2px;
+  width: 240px;
+  height: 160px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1941,10 +1941,6 @@ button:focus {
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
   }
-}
-
-.logo-preloader {
-  margin-bottom: 32px;
 }
 
 .investment-block {
@@ -2278,4 +2274,30 @@ button:focus {
 #contacts,
 #work {
   background: var(--color-light-grey);
+}
+
+#bayleys {
+  fill: #cea45b;
+  stroke: #cea45b;
+}
+
+#bayleys {
+  stroke-width: 0;
+  animation: logo 6s linear infinite;
+}
+
+@keyframes logo {
+  0% {
+    stroke-width: 1pt;
+    stroke-dashoffset: 1200;
+    fill-opacity: 0;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 0;
+    stroke-width: 1pt;
+  }
 }

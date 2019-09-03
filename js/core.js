@@ -50,7 +50,7 @@ $(document).ready(function() {
   });
 });
 
-$("#myCarousel,#NewsCarousel").carousel({
+$("#myCarousel,#NewsCarousel,#workCarousel").carousel({
   interval: false
 });
 
