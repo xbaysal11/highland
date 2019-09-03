@@ -321,7 +321,8 @@ header {
   z-index: 2000;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background: linear-gradient(180deg, #f0f4f8 0%, rgba(240, 244, 248, 0) 100%);
+  /* background: linear-gradient(180deg, #f0f4f8 0%, rgba(240, 244, 248, 0) 100%); */
+  background: rgba(240, 244, 248, 0.3);
 }
 .video-header {
   background: none;
@@ -527,7 +528,7 @@ header {
   color: #2c3e50;
   font-family: var(--f-pt-sans);
   padding: 40px 48px;
-  min-height: 448px;
+  min-height: 500px;
 }
 
 .inner-tab-list {
@@ -1157,7 +1158,7 @@ header {
   font-family: var(--f-pt-sans);
   font-size: var(--font-md-1);
   color: var(--color-light-grey);
-  padding: 31px 0;
+  padding: 18px 0;
   text-align: center;
   width: 100%;
   position: absolute;

@@ -263,8 +263,28 @@
   .team-block-wrapper {
     margin-bottom: 400px;
   }
+  .work-header {
+    text-align: center !important;
+  }
+  .work-text {
+    max-width: none;
+  }
+  .line {
+    margin: 0 auto;
+  }
+  .hc-card {
+    max-width: 480px;
+    margin-bottom: 56px;
+  }
+  .hc-card:nth-child(5) {
+    margin-left: 9px;
+  }
 }
 @media (max-width: 960px) {
+  .hc-card {
+    max-width: 350px;
+  }
+
   .tools-items {
     flex-wrap: wrap;
   }
@@ -436,6 +456,9 @@
   .hc-parallax {
     min-height: 900px;
     padding-top: 42px;
+  }
+  .hc-card:nth-child(5) {
+    margin-left: 0;
   }
 }
 
@@ -609,6 +632,7 @@
   }
   .hc-card {
     position: relative;
+    max-width: none;
   }
   .toggle-plus {
     position: absolute;
@@ -621,6 +645,7 @@
   .slider-title {
     font-size: 36px;
   }
+
   .tools-info {
     padding: 40px 0;
   }
