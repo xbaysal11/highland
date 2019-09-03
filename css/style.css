@@ -356,7 +356,7 @@ header {
   font-size: var(--font-ex-md);
   margin-bottom: 24px;
 }
-.header-logo{
+.header-logo {
   margin-bottom: 40px;
 }
 
@@ -1847,8 +1847,8 @@ button:focus {
   height: 160px;
   left: 0;
   right: 0;
-  bottom:0;
-  top: -156px;
+  bottom: 0;
+  top: -152px;
   margin: auto;
 }
 
