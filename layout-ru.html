@@ -771,7 +771,7 @@
               <h5 class="tools-info-title wow fadeInUp">Как мы работаем</h5>
               <p class="work-text default-size-1 hc-dark-blue">Разработка инвестиционного проекта включает в себя ряд
                 этапов, каждый из которых нужен обязательно для выработки обоснованного решения.</p>
-              <div class="line hc-light-grey"></div>
+              <div class="line hc-line hc-light-grey"></div>
             </div>
             <div class="d-flex  justify-content-between flex-wrap work-cards wow fadeInLeft">
               <div class="hc-card" data-toggle="modal" data-target="#hc-card-1">
@@ -913,7 +913,7 @@
               <p class="about-us-text">email: <a class="hc-link-underline hc-dark-blue"
                   href="mailto:info@highland.kg">info@highland.kg</a></p>
               <div class="hc-title-md hc-mb-1">Предложить проект</div>
-              <p class="hc-lh-normal">Если вы в поисках инвестиций, пишите нам на адрес: <a
+              <p class="hc-lh-normal default-size-1">Если вы в поисках инвестиций, пишите нам на адрес: <a
                   class="hc-link-underline hc-dark-blue" href="mailto:usubakunov@highland.kg">info@highland.kg</a>
                 Пожалуйста, отправьте описание Вашего проекта и укажите контактную информацию, и мы с Вами свяжемся
                 для
@@ -1117,6 +1117,11 @@
         },
         onLeave: function (origin, destination, direction) {
           var leavingSection = this;
+          if (origin.index == 0 && direction == "down") {
+            $(".logo2").addClass("header-logo-anim");
+          } else {
+            $(".logo2").removeClass("header-logo-anim");
+          }
           if (origin.index == 0 && direction == "down") {
             case_vivus.play();
             social_vivus.play();

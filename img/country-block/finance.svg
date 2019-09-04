@@ -1,6 +1,6 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
-<path d="M2 10.5L13.9726 2L25.9453 18L46 9.5" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="UuYNpTsh_0"></path>
-<path d="M33 25.5V43.0088L27 43.0264V28L33 25.5Z" stroke="#CEA45B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="UuYNpTsh_1"></path>
-<path d="M10 16.465V43.0353H5V19.6468L10 16.465Z" stroke="#CEA45B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="UuYNpTsh_2"></path>
-<path d="M6 46H2V19L13 11V46H24V26L35 21.5V46H46V17L40 19.5" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="UuYNpTsh_3"></path>
-<style data-made-with="vivus-instant">.UuYNpTsh_0{stroke-dasharray:57 59;stroke-dashoffset:58;}.start .UuYNpTsh_0{animation:UuYNpTsh_draw 720ms ease-in-out 0ms forwards;}.UuYNpTsh_1{stroke-dasharray:46 48;stroke-dashoffset:47;}.start .UuYNpTsh_1{animation:UuYNpTsh_draw 584ms ease-in-out 720ms forwards;}.UuYNpTsh_2{stroke-dasharray:61 63;stroke-dashoffset:62;}.start .UuYNpTsh_2{animation:UuYNpTsh_draw 770ms ease-in-out 1305ms forwards;}.UuYNpTsh_3{stroke-dasharray:194 196;stroke-dashoffset:195;}.start .UuYNpTsh_3{animation:UuYNpTsh_draw 2424ms ease-in-out 2075ms forwards;}@keyframes UuYNpTsh_draw{100%{stroke-dashoffset:0;}}@keyframes UuYNpTsh_fade{0%{stroke-opacity:1;}95.40229885057471%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.5L13.9726 2L25.9453 18L46 9.5" stroke="#1B2D43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33 25.5V43.0088L27 43.0264V28L33 25.5Z" stroke="#CEA45B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 16.465V43.0353H5V19.6468L10 16.465Z" stroke="#CEA45B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 46H2V19L13 11V46H24V26L35 21.5V46H46V17L40 19.5" stroke="#1B2D43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

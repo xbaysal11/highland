@@ -1,6 +1,6 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
-<path d="M37 17.5L24 13L11 17.2353L24 22L37 17.5Z" stroke="#CEA45B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_0"></path>
-<path d="M2 17L24 8L46 17.5L24 27L2 17ZM2 17V39" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_1"></path>
-<path d="M39 21V35" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_2"></path>
-<path d="M9 21V36C21 44 34 37.5 34 37.5" stroke="#1B2D43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="LJBkjzyo_3"></path>
-<style data-made-with="vivus-instant">.LJBkjzyo_0{stroke-dasharray:56 58;stroke-dashoffset:57;}.start .LJBkjzyo_0{animation:LJBkjzyo_draw 1096ms ease-in-out 0ms forwards;}.LJBkjzyo_1{stroke-dasharray:118 120;stroke-dashoffset:119;}.start .LJBkjzyo_1{animation:LJBkjzyo_draw 2288ms ease-in-out 1096ms forwards;}.LJBkjzyo_2{stroke-dasharray:14 16;stroke-dashoffset:15;}.start .LJBkjzyo_2{animation:LJBkjzyo_draw 288ms ease-in-out 3384ms forwards;}.LJBkjzyo_3{stroke-dasharray:42 44;stroke-dashoffset:43;}.start .LJBkjzyo_3{animation:LJBkjzyo_draw 826ms ease-in-out 3673ms forwards;}@keyframes LJBkjzyo_draw{100%{stroke-dashoffset:0;}}@keyframes LJBkjzyo_fade{0%{stroke-opacity:1;}95.40229885057471%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M37 17.5L24 13L11 17.2353L24 22L37 17.5Z" stroke="#CEA45B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 17L24 8L46 17.5L24 27L2 17ZM2 17V39" stroke="#1B2D43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39 21V35" stroke="#1B2D43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 21V36C21 44 34 37.5 34 37.5" stroke="#1B2D43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

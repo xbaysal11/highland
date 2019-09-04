@@ -514,6 +514,7 @@ header {
 
 .hc-tab-label {
   display: block;
+  font-family: var(--f-pt-sans);
   font-size: var(--font-md-1);
   color: var(--md-dark-blue);
   text-transform: uppercase;
