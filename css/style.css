@@ -2306,3 +2306,26 @@ button:focus {
     stroke-width: 1pt;
   }
 }
+
+.header-logo-anim img {
+  -webkit-animation: floatBubble 0.7s normal ease-in;
+  animation: floatBubble 0.7s normal ease-out;
+}
+@keyframes floatBubble {
+  0% {
+    transform: translate(300px, 50px);
+    width: 240px;
+    height: 160px;
+  }
+  30% {
+    transform: translate(150px, 25px);
+    width: 100px;
+    height: 90px;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    width: 48px;
+    height: 32px;
+  }
+}

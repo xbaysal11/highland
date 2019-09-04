@@ -110,7 +110,9 @@
         </div><!-- /header-top-menu -->
         <div class="header-title-block">
           <div class="container">
-            <img class="header-logo" src="./img/pr-logo.svg" alt="">
+            <div class="header-logo" id="header-logo">
+              <img src="./img/pr-logo.svg" alt="">
+            </div>
             <h1 class="header-title wow fadeInUp" data-wow-duration="4s">Highland Capital</h1>
             <p class="header-title-text wow fadeInUp" data-wow-duration="4s">Partner of choice for investing in
               Kyrgyzstan
@@ -1085,6 +1087,13 @@
         },
         onLeave: function (origin, destination, direction) {
           var leavingSection = this;
+          if (origin.index == 0 && direction == "down") {
+            $(".logo2").addClass("header-logo-anim");
+          } else {
+            $(".logo2").removeClass("header-logo-anim");
+
+          }
+
           if (origin.index == 5 && direction == "down") {
             communication_vivus.play();
             education_vivus.play();
