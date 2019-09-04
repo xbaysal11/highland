@@ -1522,14 +1522,17 @@ button:focus {
   font-family: var(--f-pt-sans);
   font-size: var(--font-md-1);
   color: var(--dark-blue);
-  padding: 0 16px;
+  /* padding: 0 16px; */
   margin-bottom: 24px;
 }
 
 #filesInfo p {
-  margin-bottom: 32px;
   background: url("../icons/cross.svg") 0 0 no-repeat;
   background-position: right center;
+  width: 30%;
+  padding: 10px;
+  margin: 0 5px 8px 0;
+  float: left;
 }
 
 .modal-body {
@@ -2308,8 +2311,8 @@ button:focus {
 }
 
 .header-logo-anim img {
-  -webkit-animation: floatBubble 0.7s normal ease-in;
-  animation: floatBubble 0.7s normal ease-out;
+  -webkit-animation: floatBubble 0.5s normal ease-in;
+  animation: floatBubble 0.5s normal ease-out;
 }
 @keyframes floatBubble {
   0% {

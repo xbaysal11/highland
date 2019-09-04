@@ -64,8 +64,12 @@ function myFunction() {
     } else {
       for (var i = 0; i < x.files.length; i++) {
         var file = x.files[i];
+        var fileName = file.name;
         if ("name" in file) {
-          txt += "<p>" + file.name + "</p>";
+          if (fileName.length > 15) {
+            fileName = fileName.substring(0, 15 - 3) + "...";
+            txt += "<p>" + fileName + "</p>";
+          }
         }
       }
     }
