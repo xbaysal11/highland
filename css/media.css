@@ -311,6 +311,9 @@
   .hc-layer-3 {
     bottom: -100%;
   }
+  .investment-right {
+    zoom: 50%;
+  }
 }
 
 @media (max-width: 800px) {
