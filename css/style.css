@@ -2349,15 +2349,16 @@ button:focus {
   position: relative;
   height: 645px;
   width: 488px;
+  top: 0;
+  left: 0;
 }
-
 .layer-dots {
   background: url("../img/fonds/dots.svg");
   background-repeat: no-repeat;
   width: 190px;
   height: 190px;
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   left: 0;
   z-index: 1;
 }
@@ -2372,13 +2373,13 @@ button:focus {
   left: 20%;
   z-index: 4;
 }
+
 .layer-pencil {
   background: url("../img/fonds/pencil.png");
   background-repeat: no-repeat;
   width: 231px;
   height: 244px;
   position: absolute;
-  bottom: 0;
   top: 20%;
   right: 0;
   z-index: 3;
@@ -2389,7 +2390,7 @@ button:focus {
   width: 488px;
   height: 516px;
   position: absolute;
-  bottom: 0;
+  top: 5%;
   left: 0;
   z-index: 2;
 }

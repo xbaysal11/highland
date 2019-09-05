@@ -160,7 +160,7 @@
         <div class="about-us-info zoom-1">
           <div class="container">
             <div class="d-flex justify-content-between info-items">
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="0.5s">
                 <div class="info-item-icon">
                   <div id="case_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -169,7 +169,7 @@
                   <p class="info-item-text">First close</p>
                 </div>
               </div>
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="1s">
                 <div class="info-item-icon">
                   <div id="social_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -178,7 +178,7 @@
                   <p class="info-item-text">IRR on investments</p>
                 </div>
               </div>
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="1.5s">
                 <div class="info-item-icon">
                   <div id="capital_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -187,7 +187,7 @@
                   <p class="info-item-text">Invested capital</p>
                 </div>
               </div>
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="2s">
                 <div class="info-item-icon">
                   <div id="invest_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -634,10 +634,10 @@
             </div>
           </div><!-- container country-us -->
         </section><!-- country-block -->
-        <section class="country-info d-flex justify-content-between zoom-1 wow fadeInUp">
+        <section class="country-info d-flex justify-content-between zoom-1 wow fadeInUp" data-wow-duration="1s">
           <div class="container">
             <div class="country-info-items d-flex justify-content-between">
-              <div class="country-info-item">
+              <div class="country-info-item wow fadeInUp" data-wow-duration="2s">
                 <div class="country-info-image mb-3">
                   <div id="communication_vivus" class="country-info-svg"></div>
                 </div>
@@ -646,7 +646,7 @@
                   <div class="country-info-text">6.3 million</div>
                 </div>
               </div>
-              <div class="country-info-item">
+              <div class="country-info-item wow fadeInUp" data-wow-duration="2.5s">
                 <div class="country-info-image mb-3">
                   <div id="education_vivus" class="country-info-svg"></div>
                 </div>
@@ -655,7 +655,7 @@
                   <div class="country-info-text">99% of population</div>
                 </div>
               </div>
-              <div class="country-info-item">
+              <div class="country-info-item wow fadeInUp" data-wow-duration="3s">
                 <div class="country-info-image mb-3">
                   <div id="female_vivus" class="country-info-svg"></div>
                 </div>
@@ -664,7 +664,7 @@
                   <div class="country-info-text">60% under age 30</div>
                 </div>
               </div>
-              <div class="country-info-item">
+              <div class="country-info-item wow fadeInUp" data-wow-duration="3.5s">
                 <div class="country-info-image mb-3">
                   <div id="trip_vivus" class="country-info-svg"></div>
                 </div>
@@ -673,7 +673,7 @@
                   <div class="country-info-text">61 countries</div>
                 </div>
               </div>
-              <div class="country-info-item">
+              <div class="country-info-item wow fadeInUp" data-wow-duration="4s">
                 <div class="country-info-image mb-3">
                   <div id="finance_vivus" class="country-info-svg"></div>
                 </div>
@@ -1016,45 +1016,58 @@
   <script src="./js/vivus.min.js"></script>
   <script src="./js/turbo-parallax.js"></script>
   <script>
-    const config_vivus = `type: 'oneByOne',
-      duration: 4500,
-      start: "inViewport",
-      // pathTimingFunction: "EASE_IN"`;
-
     var case_vivus = new Vivus("case_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 100,
+      start: "inViewport",
       file: "./icons/about-block/case.svg"
     });
     var social_vivus = new Vivus("social_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 150,
+      start: "inViewport",
       file: "./icons/about-block/social.svg"
     });
     var capital_vivus = new Vivus("capital_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 200,
+      start: "inViewport",
       file: "./icons/about-block/capital.svg"
     });
     var invest_vivus = new Vivus("invest_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 250,
+      start: "inViewport",
       file: "./icons/about-block/investments.svg"
     });
     var communication_vivus = new Vivus("communication_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 100,
+      start: "inViewport",
       file: "./img/country-block/communication.svg"
     });
     var education_vivus = new Vivus("education_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 150,
+      start: "inViewport",
       file: "./img/country-block/education.svg"
     });
     var fimale_vivus = new Vivus("female_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 200,
+      start: "inViewport",
       file: "./img/country-block/female.svg"
     });
     var trip_vivus = new Vivus("trip_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 250,
+      start: "inViewport",
       file: "./img/country-block/trip.svg"
     });
     var finance_vivus = new Vivus("finance_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 300,
+      start: "inViewport",
       file: "./img/country-block/finance.svg"
     });
   </script>

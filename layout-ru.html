@@ -162,7 +162,7 @@
         <div class="about-us-info zoom-1">
           <div class="container">
             <div class="d-flex justify-content-between info-items">
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="0.5s">
                 <div class="info-item-icon">
                   <div id="case_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -171,7 +171,7 @@
                   <p class="info-item-text">Привлеченный капитал</p>
                 </div>
               </div>
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="1s">
                 <div class="info-item-icon">
                   <div id="social_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -180,7 +180,7 @@
                   <p class="info-item-text">IRR по инвестициям</p>
                 </div>
               </div>
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="1.5s">
                 <div class="info-item-icon">
                   <div id="capital_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -189,7 +189,7 @@
                   <p class="info-item-text">Инвестированного капитала</p>
                 </div>
               </div>
-              <div class="info-item wow fadeInUp">
+              <div class="info-item wow fadeInUp" data-wow-duration="2s">
                 <div class="info-item-icon">
                   <div id="invest_vivus" class="info-item-icon-svg"></div>
                 </div>
@@ -300,8 +300,8 @@
               </div>
             </div><!-- /TAB-2 -->
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <p class="inner-tab-text tab-list-row"> Фонд предоставляет капитал для роста компаний в форме прямых или
-                мезонинных инвестиций в размере от $ 0,8 до 2,5 млн на срок от 4 до 7 лет.</p>
+              <p class="inner-tab-text tab-list-row">Фонд $ 0,8 млн. – $ 2,5 млн. инвестицияларды 4 жылдан 7 жылга чейин
+                берет.</p>
 
               <p class="inner-tab-text">Фонд сосредоточен на двух основных направлениях:</p>
               <div class="d-flex justify-content-between flex-wrap">
@@ -1070,25 +1070,28 @@
   <script src="./js/vivus.min.js"></script>
   <script src="./js/turbo-parallax.js"></script>
   <script>
-    const config_vivus = `type: 'oneByOne',
-      duration: 4500,
-      start: "inViewport",
-      // pathTimingFunction: "EASE_IN"`;
-
     var case_vivus = new Vivus("case_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 100,
+      start: "inViewport",
       file: "./icons/about-block/case.svg"
     });
     var social_vivus = new Vivus("social_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 150,
+      start: "inViewport",
       file: "./icons/about-block/social.svg"
     });
     var capital_vivus = new Vivus("capital_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 200,
+      start: "inViewport",
       file: "./icons/about-block/capital.svg"
     });
     var invest_vivus = new Vivus("invest_vivus", {
-      config_vivus,
+      type: 'oneByOne',
+      duration: 250,
+      start: "inViewport",
       file: "./icons/about-block/investments.svg"
     });
   </script>
