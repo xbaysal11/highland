@@ -113,8 +113,19 @@ $(window).scroll(function() {
 
 document.body.onload = function() {
   var preloader = document.getElementById("HcPreloader");
-  if (!preloader.classList.contains("preloader-done")) {
+  if (preloader.classList.contains("preloader-done")) {
+    // preloader.classList.add("preloader-done");
+    // preloader.classList.remove("preloader-done");
+  } else {
     preloader.classList.add("preloader-done");
+    $("#zorro1").addClass("overlay1");
+    $(".overlay1")
+      .delay(2050)
+      .fadeOut(300);
+    setTimeout(function() {
+      $(".header-title").removeClass("invisible");
+      $(".header-title-text").removeClass("invisible");
+    }, 2200);
   }
 };
 
@@ -165,18 +176,28 @@ $(".nav-mobile li a").bind("click", function() {
   document.getElementById("toggler").checked = false;
 });
 
-var top1 = $("#tabs").offset().top;
-var top2 = $("#video").offset().top;
-var top3 = $("#prlx-block").offset().top;
-var top4 = $("#team-group").offset().top;
+var header = $("#header").offset().top;
+var about = $("#about_us").offset().top;
+var tabs = $("#tabs").offset().top;
+var video = $("#video").offset().top;
+var prlx = $("#prlx-block").offset().top;
+var team = $("#team-group").offset().top;
 
 $(document).scroll(function() {
   var scrollPos = $(document).scrollTop();
-  if (scrollPos >= top1 && scrollPos < top2) {
+  if (scrollPos >= about && scrollPos < tabs) {
+    // $("#zorro1").removeClass("overlay1");
+  } else if (scrollPos >= tabs && scrollPos < video) {
     $(".fixed-header").removeClass("video-header");
-  } else if (scrollPos >= top2 && scrollPos < top3) {
+    // $("#zorro2").removeClass("overlay2");
+  } else if (scrollPos >= video && scrollPos < prlx) {
     $(".fixed-header").addClass("video-header");
-  } else if (scrollPos >= top3 && scrollPos < top4) {
+    // $("#zorro2").addClass("overlay2");
+    // $(".overlay2")
+    //   .delay(1500)
+    //   .fadeOut(300);
+  } else if (scrollPos >= prlx && scrollPos < team) {
     $(".fixed-header").removeClass("video-header");
+    // $("#zorro2").removeClass("overlay2");
   }
 });

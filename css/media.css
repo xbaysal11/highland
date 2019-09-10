@@ -139,6 +139,9 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+  .overlay2, .overlay1 {
+    display: none;
+  }
 }
 
 @media (max-width: 1140px) {
