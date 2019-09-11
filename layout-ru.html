@@ -227,16 +227,17 @@
                 aria-controls="home" aria-selected="true">Коротко о Highland</a>
             </li>
             <li class="nav-item hc-tab">
-              <a class="nav-link hc-tab-label" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                aria-controls="profile" aria-selected="false">Создание ценности</a>
-            </li>
-            <li class="nav-item hc-tab">
               <a class="nav-link hc-tab-label" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                 aria-controls="contact" aria-selected="false">Стратегия</a>
+            </li>
+            <li class="nav-item hc-tab">
+              <a class="nav-link hc-tab-label" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                aria-controls="profile" aria-selected="false">Создание ценности</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <img class="tab-img" src="./img/tabs/world_map.svg" alt="">
               <div class="d-flex tabs-column justify-content-between">
                 <ul class="inner-tab-list">
                   <li>Впечатляющий послужной список инвестиций в Кыргызстане</li>
@@ -254,6 +255,59 @@
                 </ul>
               </div>
             </div><!-- /TAB-1 -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <p class="inner-tab-text">Фонд сосредоточен на двух основных направлениях:</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="mv-tab-list">
+                  <div class="hc-bg-grey hc-mb-1 hc-mb-1">
+                    <div class="list-item-title item-rm-icon">Сектора, ориентированные на сильный внутренний спрос</div>
+                  </div>
+                  <ul>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/food.svg" alt="food"></div>
+                      <div class="item-text-block hc-ml-1">Еда и напитки</div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/house.svg" alt="house"></div>
+                      <div class="item-text-block hc-ml-1">Жилая и коммерческая недвижимость</div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/telecom.svg" alt="telecom"></div>
+                      <div class="item-text-block hc-ml-1">Телекоммуникации</div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/education.svg" alt="education"></div>
+                      <div class="item-text-block hc-ml-1">Образование</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mv-tab-list">
+                  <div class="hc-bg-grey hc-mb-1 hc-mb-1">
+                    <div class="list-item-title item-rm-icon">Сектора, ориентированные на экспорт</div>
+                  </div>
+                  <ul>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/organic.svg" alt="organic"></div>
+                      <div class="item-text-block hc-ml-1">Органическое сельское хозяйство</div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/food.svg" alt="food"></div>
+                      <div class="item-text-block hc-ml-1">Еда и напитки: молочная и мясная переработка</div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/travel.svg" alt="travel"></div>
+                      <div class="item-text-block hc-ml-1">Туризм</div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                      <div><img src="./icons/tabs/service.svg" alt="service"></div>
+                      <div class="item-text-block hc-ml-1">Разработка ПО и технологий; аутсорсинговые услуги</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="inner-tab-text mt-2">*Фонд $ 0,8 млн. – $ 2,5 млн. инвестицияларды 4 жылдан 7 жылга чейин
+                берет.</p>
+            </div><!-- /TAB-2 -->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="inner-list-item">
@@ -308,60 +362,6 @@
                     <li>Другие консультации</li>
                   </ul>
                 </div><!-- INNER-LIST-ITEM -->
-              </div>
-            </div><!-- /TAB-2 -->
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <p class="inner-tab-text tab-list-row">Фонд $ 0,8 млн. – $ 2,5 млн. инвестицияларды 4 жылдан 7 жылга чейин
-                берет.</p>
-
-              <p class="inner-tab-text">Фонд сосредоточен на двух основных направлениях:</p>
-              <div class="d-flex justify-content-between flex-wrap">
-                <div class="mv-tab-list">
-                  <div class="hc-bg-grey hc-mb-1 hc-mb-1">
-                    <div class="list-item-title item-rm-icon">Сектора, ориентированные на сильный внутренний спрос</div>
-                  </div>
-                  <ul>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/food.svg" alt="food"></div>
-                      <div class="item-text-block hc-ml-1">Еда и напитки</div>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/house.svg" alt="house"></div>
-                      <div class="item-text-block hc-ml-1">Жилая и коммерческая недвижимость</div>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/telecom.svg" alt="telecom"></div>
-                      <div class="item-text-block hc-ml-1">Телекоммуникации</div>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/education.svg" alt="education"></div>
-                      <div class="item-text-block hc-ml-1">Образование</div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mv-tab-list">
-                  <div class="hc-bg-grey hc-mb-1 hc-mb-1">
-                    <div class="list-item-title item-rm-icon">Сектора, ориентированные на экспорт</div>
-                  </div>
-                  <ul>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/organic.svg" alt="organic"></div>
-                      <div class="item-text-block hc-ml-1">Органическое сельское хозяйство</div>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/food.svg" alt="food"></div>
-                      <div class="item-text-block hc-ml-1">Еда и напитки: молочная и мясная переработка</div>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/travel.svg" alt="travel"></div>
-                      <div class="item-text-block hc-ml-1">Туризм</div>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <div><img src="./icons/tabs/service.svg" alt="service"></div>
-                      <div class="item-text-block hc-ml-1">Разработка ПО и технологий; аутсорсинговые услуги</div>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div><!-- /TAB-3 -->
           </div>
