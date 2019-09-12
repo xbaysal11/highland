@@ -1302,10 +1302,10 @@ button:focus {
 
 .hc-play {
   background: url("../icons/play_btn.svg") center no-repeat;
-  width: 70px;
-  height: 70px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  width: 80px;
+  height: 80px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hc-play:hover {
