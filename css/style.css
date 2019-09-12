@@ -1301,15 +1301,21 @@ button:focus {
 }
 
 .hc-play {
-  background: url("../icons/play_btn.svg") center no-repeat;
   width: 80px;
   height: 80px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.hc-play:hover {
-  background: url("../icons/play_btn_dis.svg") center no-repeat;
+.hc-play:hover .circle-bg {
+  fill: #101b29 !important;
+}
+.hc-play:hover .circle-stroke {
+  stroke: #72809d !important;
+}
+.hc-play:hover .play-path {
+  fill: white !important;
 }
 
 .team-section .modal {
