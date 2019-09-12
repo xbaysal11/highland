@@ -66,8 +66,8 @@ function myFunction() {
         var file = x.files[i];
         var fileName = file.name;
         if ("name" in file) {
-          if (fileName.length > 12) {
-            fileName = fileName.substring(0, 12 - 3) + "...";
+          if (fileName.length > 15) {
+            fileName = fileName.substring(0, 15 - 3) + "...";
             txt +=
               "<p id='file-" +
               i +
