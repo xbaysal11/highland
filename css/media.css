@@ -597,7 +597,7 @@
   .slider-wrapper .modal-content {
     border: none;
   }
-  .modal-content {
+  #work .modal-content {
     height: 100vh;
   }
   .slider-wrapper .modal {
@@ -617,7 +617,6 @@
   }
   .video-section .modal-body {
     padding: 15px;
-    margin-top: 50%;
   }
   .tools-info-title {
     font-size: 24px;
