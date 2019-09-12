@@ -570,7 +570,7 @@ header {
 }
 
 .inner-tab-text {
-  max-width: 840px;
+  /* max-width: 840px; */
   margin: 0 auto;
   font-size: var(--font-md-1);
   color: var(--dark-blue);
