@@ -1536,13 +1536,23 @@ button:focus {
 
 #filesInfo p {
   background: url("../icons/cross.svg") 0 0 no-repeat;
-  background-position: right center;
-  width: 30%;
+  background-position: 75% center;
+  width: 32%;
+  padding: 10px;
+  margin: 0 5px 8px 0;
+  float: left;
+  cursor: pointer;
+}
+#filesInfo p:hover {
+  background: url("../icons/cross-hover.svg") 0 0 no-repeat;
+  background-color: #f0f4f8;
+  color: #72809D;
+  background-position: 75% center;
+  width: 32%;
   padding: 10px;
   margin: 0 5px 8px 0;
   float: left;
 }
-
 .modal-body {
   max-height: 100%;
 }
