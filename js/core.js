@@ -68,13 +68,30 @@ function myFunction() {
         if ("name" in file) {
           if (fileName.length > 15) {
             fileName = fileName.substring(0, 15 - 3) + "...";
-            txt += "<p>" + fileName + "</p>";
+            txt +=
+              "<p id='file-" +
+              i +
+              "' onClick='deleteFile(this.id)'>" +
+              fileName +
+              "</p>";
+          } else {
+            txt +=
+              "<p id='file-" +
+              i +
+              "' onClick='deleteFile(this.id)'>" +
+              fileName +
+              "</p>";
           }
         }
       }
     }
   }
   document.getElementById("filesInfo").innerHTML = txt;
+}
+
+function deleteFile(clicked_id) {
+  var file = document.getElementById(clicked_id);
+  file.remove();
 }
 
 var formSub = $("#formSub");
