@@ -130,21 +130,21 @@ $(window).scroll(function() {
 
 document.body.onload = function() {
   var preloader = document.getElementById("HcPreloader");
-  if (preloader.classList.contains("preloader-done")) {
-    // preloader.classList.add("preloader-done");
-    // preloader.classList.remove("preloader-done");
-  } else {
+  if (!preloader.classList.contains("preloader-done")) {
     preloader.classList.add("preloader-done");
-    $("#zorro1").addClass("overlay1");
-    $(".overlay1")
-      .delay(2050)
-      .fadeOut(300);
-    setTimeout(function() {
-      $(".header-title").removeClass("invisible");
-      $(".header-title-text").removeClass("invisible");
-    }, 2200);
   }
 };
+
+$(window).load(function() {
+  $("#zorro1").addClass("overlay1");
+  $(".overlay1")
+    .delay(3500)
+    .fadeOut(300);
+  setTimeout(function() {
+    $(".header-title").removeClass("invisible");
+    $(".header-title-text").removeClass("invisible");
+  }, 3500);
+});
 
 $(document).ready(function() {
   $("#nav li a, .logo2").bind("click", function(e) {
