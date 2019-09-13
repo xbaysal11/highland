@@ -136,14 +136,19 @@ document.body.onload = function() {
 };
 
 $(window).load(function() {
-  $("#zorro1").addClass("overlay1");
-  $(".overlay1")
-    .delay(3500)
-    .fadeOut(300);
+  setTimeout(function() {
+    $("#zorro1").addClass("overlay1");
+    $("#zorroq").removeClass("d-none");
+    // $("#flash").addClass("d-block");
+    $(".overlay1")
+      .delay(3000)
+      .fadeOut(300);
+  }, 1000);
+
   setTimeout(function() {
     $(".header-title").removeClass("invisible");
     $(".header-title-text").removeClass("invisible");
-  }, 3500);
+  }, 4000);
 });
 
 $(document).ready(function() {
