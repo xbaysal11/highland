@@ -2357,15 +2357,20 @@ button:focus {
   left: 0;
   margin: auto 0;
 }
+#scene div {
+  left: unset;
+  top: unset;
+}
 .layer-dots {
   background: url("../img/fonds/dots.svg");
   background-repeat: no-repeat;
   width: 190px;
   height: 190px;
   position: absolute;
-  bottom: 0;
-  left: 0;
   z-index: 1;
+  left: 0 !important;
+  bottom: 0 !important;
+  top: unset !important;
 }
 
 .layer-flash {
@@ -2374,9 +2379,9 @@ button:focus {
   width: 147px;
   height: 129px;
   position: absolute;
-  bottom: 0;
-  left: 20%;
   z-index: 4;
+  top: 23em !important;
+  left: 5em !important;
 }
 
 .layer-pencil {
@@ -2384,10 +2389,11 @@ button:focus {
   background-repeat: no-repeat;
   width: 231px;
   height: 244px;
-  position: absolute;
-  top: 10%;
-  right: 0;
   z-index: 3;
+  position: absolute;
+  top: -2em !important;
+  right: -18em !important;
+  left: unset !important;
 }
 .layer-notepad {
   background: url("../img/fonds/notepad.png");
@@ -2395,9 +2401,9 @@ button:focus {
   width: 488px;
   height: 516px;
   position: absolute;
-  top: 5%;
-  left: 0;
   z-index: 2;
+  top: 0em !important;
+  left: 0 !important;
 }
 
 @keyframes animate-svg-stroke-1 {
@@ -2461,14 +2467,16 @@ button:focus {
   height: 100%;
 }
 .overlay1 svg,
-.overlay2,.over svg {
+.overlay2,
+.over svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 .overlay2,
-.overlay1,.over {
+.overlay1,
+.over {
   position: absolute;
   top: 0;
   left: 0;
