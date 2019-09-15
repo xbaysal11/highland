@@ -130,26 +130,24 @@ $(window).scroll(function() {
 
 document.body.onload = function() {
   var preloader = document.getElementById("HcPreloader");
-  if (!preloader.classList.contains("preloader-done")) {
+  var a = document.getElementById("zorro1");
+  if (preloader.classList.contains("preloader-done")) {
+  } else {
     preloader.classList.add("preloader-done");
+    a.classList.add("overlay1");
+    hideFlash();
   }
 };
 
-$(window).load(function() {
-  setTimeout(function() {
-    $("#zorro1").addClass("overlay1");
-    $("#zorroq").removeClass("d-none");
-    // $("#flash").addClass("d-block");
-    $(".overlay1")
-      .delay(3000)
-      .fadeOut(300);
-  }, 1000);
-
+function hideFlash() {
+  $(".overlay1")
+    .delay(3500)
+    .fadeOut(300);
   setTimeout(function() {
     $(".header-title").removeClass("invisible");
     $(".header-title-text").removeClass("invisible");
   }, 4000);
-});
+}
 
 $(document).ready(function() {
   $("#nav li a, .logo2").bind("click", function(e) {
