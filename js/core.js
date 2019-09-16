@@ -1,9 +1,8 @@
-//parallax
 window.addEventListener("scroll", function(event) {
   var depth, i, layer, layers, len, movement, topDistance, translate3d;
   topDistance = this.pageYOffset;
   layers = document.querySelectorAll("[data-type='parallax']");
-  for (i = 0, len = layers.length; i < len; i++) {
+  for (i = 0, len = layers.length; i < len; i += 1) {
     layer = layers[i];
     depth = layer.getAttribute("data-depth");
     movement = -(topDistance * depth);
@@ -15,8 +14,6 @@ window.addEventListener("scroll", function(event) {
     layer.style.transform = translate3d;
   }
 });
-
-//carousel
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     loop: false,
@@ -25,36 +22,14 @@ $(document).ready(function() {
     center: false,
     nav: true,
     responsive: {
-      // breakpoint from 0 up
-      0: {
-        items: 1,
-        stagePadding: 15
-      },
-      // breakpoint from 480 up
-      480: {
-        items: 1,
-        stagePadding: 15
-      },
-      // breakpoint from 768 up
-      768: {
-        items: 2,
-        stagePadding: 15,
-        margin: 40
-      },
-      1200: {
-        items: 3,
-        stagePadding: 15,
-        margin: 40
-      }
+      0: { items: 1, stagePadding: 15 },
+      480: { items: 1, stagePadding: 15 },
+      768: { items: 2, stagePadding: 15, margin: 40 },
+      1200: { items: 3, stagePadding: 15, margin: 40 }
     }
   });
 });
-
-$("#myCarousel,#NewsCarousel,#workCarousel").carousel({
-  interval: false
-});
-
-//form input file script
+$("#myCarousel,#NewsCarousel,#workCarousel").carousel({ interval: false });
 function myFunction() {
   var x = document.getElementById("file");
   var txt = "";
@@ -62,7 +37,7 @@ function myFunction() {
     if (x.files.length == 0) {
       txt = "";
     } else {
-      for (var i = 0; i < x.files.length; i++) {
+      for (var i = 0; i < x.files.length; i += 1) {
         var file = x.files[i];
         var fileName = file.name;
         if ("name" in file) {
@@ -88,12 +63,10 @@ function myFunction() {
   }
   document.getElementById("filesInfo").innerHTML = txt;
 }
-
 function deleteFile(clicked_id) {
   var file = document.getElementById(clicked_id);
   file.remove();
 }
-
 var formSub = $("#formSub");
 var formSuccess = $("#formSuccess");
 var subBtn = $("subBtn");
@@ -103,16 +76,12 @@ $("#subBtn").click(function() {
   $("#closeBtn").css("display", "block");
   $(this).css("display", "none");
 });
-
 $("#closeBtn").click(function() {
   formSub.css("display", "block");
   formSuccess.css("display", "none");
   $(this).css("display", "none");
   $("#subBtn").css("display", "block");
 });
-
-//fixed header
-
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 300) {
     $(".header-top-menu").addClass("fixed-header");
@@ -127,7 +96,6 @@ $(window).scroll(function() {
     $(".logo1").removeClass("d-none");
   }
 });
-
 document.body.onload = function() {
   var preloader = document.getElementById("HcPreloader");
   var a = document.getElementById("zorro1");
@@ -135,47 +103,18 @@ document.body.onload = function() {
     preloader.classList.add("preloader-done");
   }
 };
-// document.body.onload = function() {
-//   var preloader = document.getElementById("HcPreloader");
-//   var a = document.getElementById("zorro1");
-//   if (preloader.classList.contains("preloader-done")) {
-//   } else {
-//     preloader.classList.add("preloader-done");
-//     a.classList.add("overlay1");
-//     hideFlash();
-//   }
-// };
-
-// function hideFlash() {
-//   $(".overlay1")
-//     .delay(3500)
-//     .fadeOut(300);
-//   setTimeout(function() {
-//     $(".header-title").removeClass("invisible");
-//     $(".header-title-text").removeClass("invisible");
-//   }, 4000);
-// }
-
 $(document).ready(function() {
   $("#nav li a, .logo2").bind("click", function(e) {
     e.preventDefault();
-
     var target = $(this).attr("href");
     $("html, body")
       .stop()
-      .animate(
-        {
-          scrollTop: $(target).offset().top
-        },
-        2000,
-        function() {
-          location.hash = target;
-        }
-      );
+      .animate({ scrollTop: $(target).offset().top }, 2000, function() {
+        location.hash = target;
+      });
     return false;
   });
 });
-
 $(window)
   .scroll(function() {
     var scrollDistance = $(window).scrollTop();
@@ -189,46 +128,31 @@ $(window)
     });
   })
   .scroll();
-
-//
 $(".modal").on("show.bs.modal", function() {
   $(".header-top-menu").css("opacity", 0);
 });
-
 $(".modal").on("hide.bs.modal", function() {
   $(".header-top-menu").css("opacity", 1);
 });
-
 $(".nav-mobile li a").bind("click", function() {
   document.getElementById("toggler").checked = false;
 });
-
 var header = $("#header").offset().top;
 var about = $("#about_us").offset().top;
 var tabs = $("#tabs").offset().top;
 var video = $("#video").offset().top;
 var prlx = $("#prlx-block").offset().top;
 var team = $("#team-group").offset().top;
-
 $(document).scroll(function() {
   var scrollPos = $(document).scrollTop();
-  if (scrollPos >= about && scrollPos < tabs) {
-    // $("#zorro1").removeClass("overlay1");
-  } else if (scrollPos >= tabs && scrollPos < video) {
+  if (scrollPos >= tabs && scrollPos < video) {
     $(".fixed-header").removeClass("video-header");
-    // $("#zorro2").removeClass("overlay2");
   } else if (scrollPos >= video && scrollPos < prlx) {
     $(".fixed-header").addClass("video-header");
-    // $("#zorro2").addClass("overlay2");
-    // $(".overlay2")
-    //   .delay(1500)
-    //   .fadeOut(300);
   } else if (scrollPos >= prlx && scrollPos < team) {
     $(".fixed-header").removeClass("video-header");
-    // $("#zorro2").removeClass("overlay2");
   }
 });
-
 $(function() {
   $(".video").click(function() {
     var theModal = $(this).data("target"),
