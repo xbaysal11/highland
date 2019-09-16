@@ -131,23 +131,30 @@ $(window).scroll(function() {
 document.body.onload = function() {
   var preloader = document.getElementById("HcPreloader");
   var a = document.getElementById("zorro1");
-  if (preloader.classList.contains("preloader-done")) {
-  } else {
+  if (!preloader.classList.contains("preloader-done")) {
     preloader.classList.add("preloader-done");
-    a.classList.add("overlay1");
-    hideFlash();
   }
 };
+// document.body.onload = function() {
+//   var preloader = document.getElementById("HcPreloader");
+//   var a = document.getElementById("zorro1");
+//   if (preloader.classList.contains("preloader-done")) {
+//   } else {
+//     preloader.classList.add("preloader-done");
+//     a.classList.add("overlay1");
+//     hideFlash();
+//   }
+// };
 
-function hideFlash() {
-  $(".overlay1")
-    .delay(3500)
-    .fadeOut(300);
-  setTimeout(function() {
-    $(".header-title").removeClass("invisible");
-    $(".header-title-text").removeClass("invisible");
-  }, 4000);
-}
+// function hideFlash() {
+//   $(".overlay1")
+//     .delay(3500)
+//     .fadeOut(300);
+//   setTimeout(function() {
+//     $(".header-title").removeClass("invisible");
+//     $(".header-title-text").removeClass("invisible");
+//   }, 4000);
+// }
 
 $(document).ready(function() {
   $("#nav li a, .logo2").bind("click", function(e) {
