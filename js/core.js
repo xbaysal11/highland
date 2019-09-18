@@ -96,13 +96,7 @@ $(window).scroll(function() {
     $(".logo1").removeClass("d-none");
   }
 });
-document.body.onload = function() {
-  var preloader = document.getElementById("HcPreloader");
-  var a = document.getElementById("zorro1");
-  if (!preloader.classList.contains("preloader-done")) {
-    preloader.classList.add("preloader-done");
-  }
-};
+
 $(document).ready(function() {
   $("#nav li a, .logo2").bind("click", function(e) {
     e.preventDefault();
