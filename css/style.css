@@ -2,6 +2,7 @@ body {
   background: var(--color-white);
   font-family: var(--f-montserrat);
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 b {
   font-weight: 700;
