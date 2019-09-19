@@ -331,6 +331,7 @@ header {
   padding-top: 70px;
 }
 .about-us-title {
+  color: var(--dark-blue);
   font-size: var(--font-lg);
   font-weight: 700;
 }
@@ -1637,6 +1638,7 @@ button:focus {
   padding: 88px 0;
 }
 .tools-info-title {
+  color: var(--dark-blue);
   font-size: 64px;
   font-weight: 700;
 }
@@ -1781,10 +1783,10 @@ button:focus {
   top: 16px;
 }
 .hc-card-link {
+  color: var(--dark-blue) !important;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  color: #1b2d43;
 }
 .hc-card-number {
   width: 28px;
@@ -2080,12 +2082,11 @@ button:focus {
 }
 
 .fond_watch {
-  font-size: var(--font-base);
+  font-size: var(--font-md-2);
   color: var(--dark-blue);
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
   line-height: 24px;
 }
 .fond_watch_btn {
