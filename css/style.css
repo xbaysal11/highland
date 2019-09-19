@@ -100,20 +100,40 @@ header {
 .bg-header {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
+  overflow: hidden;
+}
+/* .bg-header {
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-}
+} */
 .video-section {
   background: url(../img/image_bg.png) center center;
   background-size: cover;
 }
 #videobg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* #videobg {
   position: fixed;
   z-index: -1;
   width: 100%;
   -o-object-fit: fill;
   object-fit: fill;
-}
+} */
 #videobg2 {
   z-index: -1;
   width: 100%;
@@ -2057,4 +2077,21 @@ button:focus {
   margin: 50px auto;
   left: 0;
   right: 0;
+}
+
+.fond_watch {
+  font-size: var(--font-base);
+  color: var(--dark-blue);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.fond_watch_btn {
+  padding: 0;
+}
+.fond_watch_btn:hover {
+  opacity: 0.8;
+  transition: 1s all;
 }
