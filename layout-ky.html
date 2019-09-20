@@ -1215,7 +1215,7 @@
   </script>
   <script>
     if ($("body.overflow_on")) {
-      if ($(window).width() > 1024) {
+      if ($(window).width() >= 1024) {
         var myFullpage = new fullpage("#fullpage", {
           anchors: [
             "section1",
