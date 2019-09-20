@@ -125,12 +125,72 @@
     </div>
   </div>
   <script>
-    document.body.onload = function () {
+    window.onload = function () {
       var preloader = document.getElementById("HcPreloader");
       if (!preloader.classList.contains("preloader-done")) {
         preloader.classList.add("preloader-done");
       }
     };
+
+    // Website is ready
+    function r(f) { /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f() }
+    r(function () {
+      if ($(window).width() >= 1255) {
+        var myFullpage = new fullpage("#fullpage", {
+          anchors: [
+            "section1",
+            "section2",
+            "section3",
+            "section4",
+            "section5",
+            "section6",
+            "section7",
+            "section8",
+            "section9",
+            "section10"
+          ],
+          scrollingSpeed: 900,
+          autoScrolling: true,
+          scrollBar: true,
+          lazyLoading: false,
+          normalScrollElements: '.modal',
+          touchSensitivity: 10,
+          afterRender: function () {
+            new WOW().init();
+            let parallax = new TurboParallax();
+          },
+          onLeave: function (origin, destination, direction) {
+            var leavingSection = this;
+            if (origin.index == 5 && direction == "down") {
+              communication_vivus.play();
+              education_vivus.play();
+              fimale_vivus.play();
+              trip_vivus.play();
+              finance_vivus.play();
+            }
+            if (origin.index == 0 && direction == "down") {
+              case_vivus.play();
+              social_vivus.play();
+              capital_vivus.play();
+              invest_vivus.play();
+              $(".logo2").addClass("header-logo-anim");
+            } else {
+              $(".logo2").removeClass("header-logo-anim");
+            }
+            if ((origin.index == 2 && direction == "down") || (origin.index == 4 && direction == "up")) {
+              $("#zorro2").addClass("overlay2");
+              $(".overlay2")
+                .delay(2000)
+                .fadeOut(300);
+            } else {
+              $("#zorro2").removeClass("overlay2");
+            }
+          }
+        })
+      } else {
+        new WOW().init();
+      }
+    });
   </script>
   <div id="fullpage">
     <div class="section page-section" data-anchor="section1" id="header">
@@ -1210,59 +1270,6 @@
       start: "inViewport",
       file: "./icons/about-block/investments.svg"
     });
-  </script>
-  <script>
-    if ($("body.overflow_on")) {
-      if ($(window).width() >= 1024) {
-        var myFullpage = new fullpage("#fullpage", {
-          anchors: [
-            "section1",
-            "section2",
-            "section3",
-            "section4",
-            "section5",
-            "section6",
-            "section7",
-            "section8",
-            "section9",
-            "section10"
-          ],
-          // scrollingSpeed: 500,
-          // animateAnchor: true,
-          autoScrolling: true,
-          scrollBar: true,
-          lazyLoading: true,
-          normalScrollElements: '.modal',
-          // scrollOverflow: true,
-          afterRender: function () {
-            new WOW().init();
-            let parallax = new TurboParallax();
-          },
-          onLeave: function (origin, destination, direction) {
-            var leavingSection = this;
-            if (origin.index == 0 && direction == "down") {
-              case_vivus.play();
-              social_vivus.play();
-              capital_vivus.play();
-              invest_vivus.play();
-              $(".logo2").addClass("header-logo-anim");
-            } else {
-              $(".logo2").removeClass("header-logo-anim");
-            }
-            if ((origin.index == 2 && direction == "down") || (origin.index == 4 && direction == "up")) {
-              $("#zorro2").addClass("overlay2");
-              $(".overlay2")
-                .delay(2000)
-                .fadeOut(300);
-            } else {
-              $("#zorro2").removeClass("overlay2");
-            }
-          }
-        });
-      } else {
-        new WOW().init();
-      }
-    }
   </script>
 </body>
 

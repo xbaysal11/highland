@@ -14,7 +14,6 @@ window.addEventListener("scroll", function(event) {
     layer.style.transform = translate3d;
   }
 });
-
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     loop: false,
@@ -30,7 +29,6 @@ $(document).ready(function() {
     }
   });
 });
-
 $("#myCarousel,#NewsCarousel,#workCarousel").carousel({ interval: false });
 function myFunction() {
   var x = document.getElementById("file");
@@ -98,7 +96,6 @@ $(window).scroll(function() {
     $(".logo1").removeClass("d-none");
   }
 });
-
 $(document).ready(function() {
   $("#nav li a, .logo2").bind("click", function(e) {
     e.preventDefault();
@@ -162,3 +159,37 @@ $(function() {
     });
   });
 });
+(function() {
+  var method;
+  var noop = function noop() {};
+  var methods = [
+    "assert",
+    "clear",
+    "count",
+    "debug",
+    "dir",
+    "dirxml",
+    "error",
+    "exception",
+    "group",
+    "groupCollapsed",
+    "groupEnd",
+    "info",
+    "log",
+    "markTimeline",
+    "profile",
+    "profileEnd",
+    "table",
+    "time",
+    "timeEnd",
+    "timeStamp",
+    "trace",
+    "warn"
+  ];
+  var length = methods.length;
+  var console = (window.console = window.console || {});
+  while (length--) {
+    method = methods[length];
+    console[method] = noop;
+  }
+})();
