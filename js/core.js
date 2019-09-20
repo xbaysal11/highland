@@ -14,6 +14,7 @@ window.addEventListener("scroll", function(event) {
     layer.style.transform = translate3d;
   }
 });
+
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     loop: false,
@@ -29,6 +30,7 @@ $(document).ready(function() {
     }
   });
 });
+
 $("#myCarousel,#NewsCarousel,#workCarousel").carousel({ interval: false });
 function myFunction() {
   var x = document.getElementById("file");

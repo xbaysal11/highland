@@ -26,8 +26,8 @@
       height: 100%;
       background: #101b29;
       z-index: 4000;
-      -webkit-transition: 1s all;
-      transition: 1s all;
+      /* -webkit-transition: 1s all; */
+      /* transition: 1s all; */
       opacity: 1;
       visibility: visible;
     }
@@ -100,6 +100,7 @@
 <body>
   <div id="HcPreloader" class="hc-preloader">
     <div class="hc-preloader-wrapper">
+
       <div class="logo-preloader">
         <svg width="240" height="160" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 240 160" style="enable-background:new 0 0 240 160;" xml:space="preserve" class="bayleyssvg">
@@ -125,10 +126,12 @@
     </div>
   </div>
   <script>
-    document.body.onload = function () {
+    window.onload = function () {
       var preloader = document.getElementById("HcPreloader");
+      var body = document.body;
       if (!preloader.classList.contains("preloader-done")) {
         preloader.classList.add("preloader-done");
+        body.classList.add("overflow_on");
       }
     };
   </script>
@@ -1132,7 +1135,6 @@
   <script src="./js/wow.min.js"></script>
   <script src="./js/vivus.min.js"></script>
   <script src="./js/turbo-parallax.js"></script>
-
   <script>
     var case_vivus = new Vivus("case_vivus", {
       type: 'oneByOne',
@@ -1190,66 +1192,68 @@
     });
   </script>
   <script>
-    // $(window).load(function () {
-    //   $.fn.fullpage.setAutoScrolling(false);
-    // });
-    if ($(window).width() > 1024) {
-      var myFullpage = new fullpage("#fullpage", {
-        anchors: [
-          "section1",
-          "section2",
-          "section3",
-          "section4",
-          "section5",
-          "section6",
-          "section7",
-          "section8",
-          "section9",
-          "section10"
-        ],
-        scrollingSpeed: 900,
-        // animateAnchor: true,
-        autoScrolling: true,
-        scrollBar: true,
-        lazyLoading: true,
-        normalScrollElements: '.modal',
-        touchSensitivity: 10,
-        // scrollOverflow: true,
-        afterRender: function () {
-          new WOW().init();
-          let parallax = new TurboParallax();
-        },
-        onLeave: function (origin, destination, direction) {
-          var leavingSection = this;
-          if (origin.index == 5 && direction == "down") {
-            communication_vivus.play();
-            education_vivus.play();
-            fimale_vivus.play();
-            trip_vivus.play();
-            finance_vivus.play();
+    if ($("body.overflow_on")) {
+      if ($(window).width() > 1024) {
+        var myFullpage = new fullpage("#fullpage", {
+          anchors: [
+            "section1",
+            "section2",
+            "section3",
+            "section4",
+            "section5",
+            "section6",
+            "section7",
+            "section8",
+            "section9",
+            "section10"
+          ],
+          scrollingSpeed: 900,
+          // animateAnchor: true,
+          autoScrolling: true,
+          scrollBar: true,
+          lazyLoading: false,
+          normalScrollElements: '.modal',
+          touchSensitivity: 10,
+          // scrollOverflow: true,
+          afterRender: function () {
+            new WOW().init();
+            let parallax = new TurboParallax();
+          },
+          onLeave: function (origin, destination, direction) {
+            var leavingSection = this;
+            if (origin.index == 5 && direction == "down") {
+              communication_vivus.play();
+              education_vivus.play();
+              fimale_vivus.play();
+              trip_vivus.play();
+              finance_vivus.play();
+            }
+            if (origin.index == 0 && direction == "down") {
+              case_vivus.play();
+              social_vivus.play();
+              capital_vivus.play();
+              invest_vivus.play();
+              $(".logo2").addClass("header-logo-anim");
+            } else {
+              $(".logo2").removeClass("header-logo-anim");
+            }
+            if ((origin.index == 2 && direction == "down") || (origin.index == 4 && direction == "up")) {
+              $("#zorro2").addClass("overlay2");
+              $(".overlay2")
+                .delay(2000)
+                .fadeOut(300);
+            } else {
+              $("#zorro2").removeClass("overlay2");
+            }
           }
-          if (origin.index == 0 && direction == "down") {
-            case_vivus.play();
-            social_vivus.play();
-            capital_vivus.play();
-            invest_vivus.play();
-            $(".logo2").addClass("header-logo-anim");
-          } else {
-            $(".logo2").removeClass("header-logo-anim");
-          }
-          if ((origin.index == 2 && direction == "down") || (origin.index == 4 && direction == "up")) {
-            $("#zorro2").addClass("overlay2");
-            $(".overlay2")
-              .delay(2000)
-              .fadeOut(300);
-          } else {
-            $("#zorro2").removeClass("overlay2");
-          }
-        }
-      });
-    } else {
-      new WOW().init();
+        })
+      } else {
+        new WOW().init();
+      }
     }
+
+
+
   </script>
 </body>
 
