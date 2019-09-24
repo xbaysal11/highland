@@ -45,44 +45,74 @@
       visibility: hidden;
     }
     #bayleys {
-      fill: #cea45b;
-      stroke: #cea45b;
+    fill: #cea45b;
+    stroke: #cea45b;
+    stroke-width: 0;
+    -webkit-animation: logo 6s linear infinite;
+    -moz-animation: logo 6s linear infinite;
+    -o-animation: logo 6s linear infinite;
+    animation: logo 6s linear infinite;
+  }
+  @-webkit-keyframes logo {
+    0% {
+      stroke-width: 1pt;
+      stroke-dashoffset: 1200;
+      fill-opacity: 0;
     }
-    #bayleys {
-      stroke-width: 0;
-      -webkit-animation: logo 6s linear infinite;
-      animation: logo 6s linear infinite;
+    50% {
+      fill-opacity: 0;
     }
-    @-webkit-keyframes logo {
-      0% {
-        stroke-width: 1pt;
-        stroke-dashoffset: 1200;
-        fill-opacity: 0;
-      }
-      50% {
-        fill-opacity: 0;
-      }
-      100% {
-        stroke-dashoffset: 0;
-        fill-opacity: 0;
-        stroke-width: 1pt;
-      }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 0;
+      stroke-width: 1pt;
     }
-    @keyframes logo {
-      0% {
-        stroke-width: 1pt;
-        stroke-dashoffset: 1200;
-        fill-opacity: 0;
-      }
-      50% {
-        fill-opacity: 0;
-      }
-      100% {
-        stroke-dashoffset: 0;
-        fill-opacity: 0;
-        stroke-width: 1pt;
-      }
+  }
+  @-moz-keyframes logo {
+    0% {
+      stroke-width: 1pt;
+      stroke-dashoffset: 1200;
+      fill-opacity: 0;
     }
+    50% {
+      fill-opacity: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 0;
+      stroke-width: 1pt;
+    }
+  }
+  @-o-keyframes logo {
+    0% {
+      stroke-width: 1pt;
+      stroke-dashoffset: 1200;
+      fill-opacity: 0;
+    }
+    50% {
+      fill-opacity: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 0;
+      stroke-width: 1pt;
+    }
+  }
+  @keyframes logo {
+    0% {
+      stroke-width: 1pt;
+      stroke-dashoffset: 1200;
+      fill-opacity: 0;
+    }
+    50% {
+      fill-opacity: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 0;
+      stroke-width: 1pt;
+    }
+  }
   </style>
 </head>
 <body>
