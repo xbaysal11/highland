@@ -38,6 +38,9 @@
   }
 }
 @media (max-width: 1255px) {
+  body{
+    overflow-y: auto;
+  }
   .rising-item {
     max-width: 368px;
   }
