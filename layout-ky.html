@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +31,7 @@
       opacity: 1;
       visibility: visible;
     }
+
     .hc-preloader-wrapper {
       position: absolute;
       width: 280px;
@@ -40,12 +42,14 @@
       top: -152px;
       margin: auto;
     }
+
     .preloader-done {
       opacity: 0;
       visibility: hidden;
     }
   </style>
 </head>
+
 <body>
   <div id="HcPreloader" class="hc-preloader">
     <div class="hc-preloader-wrapper">
@@ -94,13 +98,6 @@
           },
           onLeave: function (origin, destination, direction) {
             var leavingSection = this;
-            if (origin.index == 5 && direction == "down") {
-              communication_vivus.play();
-              education_vivus.play();
-              fimale_vivus.play();
-              trip_vivus.play();
-              finance_vivus.play();
-            }
             if (origin.index == 0 && direction == "down") {
               case_vivus.play();
               social_vivus.play();
@@ -1196,4 +1193,5 @@
     });
   </script>
 </body>
+
 </html>
