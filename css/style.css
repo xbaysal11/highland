@@ -742,6 +742,7 @@ header {
   margin-bottom: 32px;
   cursor: pointer;
   background: var(--color-light-grey);
+  margin: auto 20px;
 }
 .team-fixed-card {
   -webkit-transition: 0.4s ease-in-out;
