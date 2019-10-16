@@ -947,6 +947,7 @@ header {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  max-height: 280px;
 }
 .hc-slide:hover {
   background: var(--color-white);
