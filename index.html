@@ -90,6 +90,7 @@
           normalScrollElements: '.modal',
           touchSensitivity: 10,
           afterRender: function () {
+            $('#nav li a').css("color","white") && $('#nav').css('margin-left','-400px')
             new WOW().init();
             let parallax = new TurboParallax();
           },
@@ -137,13 +138,13 @@
           </video>
         </div>
         <div class="header-overlay"></div>
-        <div class="header-top-menu" id="header-top-menu">
+        <div class="header-top-menu header-top-menu__padding" id="header-top-menu">
           <!-- header-top-menu -->
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                <a class="logo1 d-none" data-wow-duration="2s" href="#header"><img src="./img/Logo.svg" alt="logo"></a>
-                <a class="logo2 d-none" data-wow-duration="2s" href="#header"><img src="./img/Logo-sm.svg"
+                <a class="logo1 d-none" data-wow-duration="2s" href="#section1"><img src="./img/Logo.svg" alt="logo"></a>
+                <a class="logo2 d-none" data-wow-duration="2s" href="#section1"><img src="./img/Logo-sm.svg"
                     alt="logo"></a>
                 <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
                   <ul id="nav" class="d-flex">

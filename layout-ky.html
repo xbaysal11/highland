@@ -86,6 +86,7 @@
             "section9",
             "section10"
           ],
+          menu:"#nav",          
           scrollingSpeed: 900,
           autoScrolling: true,
           scrollBar: true,
@@ -93,6 +94,7 @@
           normalScrollElements: '.modal',
           touchSensitivity: 10,
           afterRender: function () {
+            $('#nav li a').css("color","white") && $('#nav').css('margin-left','-400px')
             new WOW().init();
             let parallax = new TurboParallax();
           },
@@ -133,23 +135,23 @@
           </video>
         </div>
         <div class="header-overlay"></div>
-        <div class="header-top-menu" id="header-top-menu">
+        <div class="header-top-menu header-top-menu__padding" id="header-top-menu">
           <!-- header-top-menu -->
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                <a class=" logo1 d-none" data-wow-duration="2s" href="#header"><img src="./img/Logo.svg" alt="logo"></a>
-                <a class=" logo2 d-none" data-wow-duration="2s" href="#header"><img src="./img/Logo-sm.svg"
+                <a class=" logo1 d-none" data-wow-duration="2s" href="#section1"><img src="./img/Logo.svg" alt="logo"></a>
+                <a class=" logo2 d-none" data-wow-duration="2s" href="#section1"><img src="./img/Logo-sm.svg"
                     alt="logo"></a>
                 <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
                   <ul id="nav" class="d-flex">
-                    <li class="d-none"><a href="#"></a></li>
-                    <li><a href="#about_us">Биз тууралуу</a></li>
-                    <li><a href="#prlx-block">Командасы</a></li>
-                    <li><a href="#fonds">фонддор жөнүндө</a></li>
-                    <li><a href="#work">Биз кантип иштейбиз</a></li>
-                    <li><a href="#news">Жанылыктар</a></li>
-                    <li><a href="#contacts">Байланыштар</a></li>
+                    <li data-menuanchor="section1" class="d-none active"><a href="#section1"></a></li>
+                    <li data-menuanchor="section2" class=""><a href="#section2">Биз тууралуу</a></li>
+                    <li data-menuanchor="section5" class=""><a href="#section5">Командасы</a></li>
+                    <li data-menuanchor="section7" class=""><a href="#section7">фонддор жөнүндө</a></li>
+                    <li data-menuanchor="section8" class=""><a href="#section8">Биз кантип иштейбиз</a></li>
+                    <li data-menuanchor="section9" class=""><a href="#section9">Жанылыктар</a></li>
+                    <li data-menuanchor="section10" class=""><a href="#section10">Байланыштар</a></li>
                   </ul>
                 </nav>
               </div><!-- navigation -->

@@ -74,6 +74,7 @@
     r(function () {
       if ($(window).width() >= 1255) {
         var myFullpage = new fullpage("#fullpage", {
+          menu:"#nav",          
           anchors: [
             "section1",
             "section2",
@@ -93,6 +94,7 @@
           normalScrollElements: '.modal',
           touchSensitivity: 10,
           afterRender: function () {
+            $('#nav li a').css("color","white") && $('#nav').css('margin-left','-400px')
             new WOW().init();
             let parallax = new TurboParallax();
           },
@@ -133,23 +135,23 @@
           </video>
         </div>
         <div class="header-overlay"></div>
-        <div class="header-top-menu" id="header-top-menu">
+        <div class="header-top-menu header-top-menu__padding" id="header-top-menu">
           <!-- header-top-menu -->
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                <a class=" logo1 d-none" data-wow-duration="2s" href="#header"><img src="./img/Logo.svg" alt="logo"></a>
-                <a class=" logo2 d-none" data-wow-duration="2s" href="#header"><img src="./img/Logo-sm.svg"
+                <a class=" logo1 d-none" data-wow-duration="2s" href="#section1"><img src="./img/Logo.svg" alt="logo"></a>
+                <a class=" logo2 d-none" data-wow-duration="2s" href="#section1"><img src="./img/Logo-sm.svg"
                     alt="logo"></a>
                 <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
                   <ul id="nav" class="d-flex">
-                    <li class="d-none active"><a href="#"></a></li>
-                    <li><a href="#about_us">о нас</a></li>
-                    <li><a href="#prlx-block">команда</a></li>
-                    <li><a href="#fonds">о фондах</a></li>
-                    <li><a href="#work">как мы работаем</a></li>
-                    <li><a href="#news">новости</a></li>
-                    <li><a href="#contacts">контакты</a></li>
+                    <li data-menuanchor="section1" class="d-none active"><a href="#section1"></a></li>
+                    <li data-menuanchor="section2" class=""><a href="#section2">о нас</a></li>
+                    <li data-menuanchor="section5" class=""><a href="#section5">команда</a></li>
+                    <li data-menuanchor="section7" class=""><a href="#section7">о фондах</a></li>
+                    <li data-menuanchor="section8" class=""><a href="#section8">как мы работаем</a></li>
+                    <li data-menuanchor="section9" class=""><a href="#section9">новости</a></li>
+                    <li data-menuanchor="section10" class=""><a href="#section10">контакты</a></li>
                   </ul>
                 </nav>
               </div><!-- navigation -->
