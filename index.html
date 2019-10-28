@@ -82,6 +82,7 @@
             "section9",
             "section10"
           ],
+          menu:"#nav",
           scrollingSpeed: 900,
           autoScrolling: true,
           scrollBar: true,
@@ -146,12 +147,12 @@
                     alt="logo"></a>
                 <nav class="header-nav wow slideInDown" data-wow-duration="2s" id="menu">
                   <ul id="nav" class="d-flex">
-                    <li class="d-none active"><a href="#"></a></li>
-                    <li><a href="#about_us">about us</a></li>
-                    <li><a href="#prlx-block">team</a></li>
-                    <li><a href="#aboutKY">About Kyrgyzstan</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li data-menuanchor="section1" class="d-none active"><a href="#section1"></a></li>
+                    <li data-menuanchor="section2" class=""><a href="#section2">about us</a></li>
+                    <li data-menuanchor="section5" class=""><a href="#section5">team</a></li>
+                    <li data-menuanchor="section7" class=""><a href="#section7">About Kyrgyzstan</a></li>
+                    <li data-menuanchor="section9" class=""><a href="#section9">News</a></li>
+                    <li data-menuanchor="section10" class=""><a href="#section10">Contacts</a></li>
                   </ul>
                 </nav>
               </div><!-- navigation -->
@@ -210,7 +211,7 @@
         </div>
       </header><!-- /header -->
     </div>
-    <div class="section page-section" data-anchor="section2" id="about_us">
+    <div class="section page-section"  id="about_us" data-anchor="section2">
       <section class="about-us hc-dark-blue bg-white">
         <div class="container zoom-1">
           <div class="d-flex about-us-column justify-content-between ">
@@ -289,7 +290,7 @@
         </div>
       </section><!-- SECTION ABOUT US -->
     </div>
-    <div class="section" data-anchor="section3" id="tabs">
+    <div class="section" id="tabs" data-anchor="section3">
       <section class="tabs-section">
         <div class="container wow fadeInUp zoom-1">
           <div class="text-center">
@@ -447,7 +448,7 @@
         </div>
       </section><!-- /TABS SECTION -->
     </div>
-    <div class="section" data-anchor="section4" id="video">
+    <div class="section" id="video" data-anchor="section4" >
       <section>
         <div class="video-section">
           <video id="videobg2" preload="metadata" autoplay muted data-keepplaying poster="./img/image_bg.png">
@@ -513,7 +514,7 @@
         </div>
       </section><!-- /VIDEO SECTION -->
     </div>
-    <div class="section page-section" data-anchor="section5" id="prlx-block">
+    <div class="section page-section"  id="prlx-block" data-anchor="section5">
       <section class="hc-parallax-block ">
         <div class="team-block-title wow fadeInUp zoom-1" data-wow-duration="2s">
           <div class="team-block-wrapper">
@@ -539,7 +540,7 @@
         </div>
       </section><!-- /hc-parallax-block -->
     </div>
-    <div class="section " data-anchor="section6" id="team-group">
+    <div class="section " id="team-group" data-anchor="section6" >
       <section class="team-section bg-white">
         <div class="container">
           <!-- The Modal -->
@@ -701,7 +702,7 @@
         </div>
       </section><!-- /team-section -->
     </div>
-    <div class="section page-section" data-anchor="section7" id="aboutKY">
+    <div class="section page-section" id="aboutKY" data-anchor="section7" >
       <div class="aboutKY">
         <section class="about-country-block zoom-1">
           <div class="container">
@@ -789,7 +790,7 @@
         </section><!-- country info -->
       </div>
     </div>
-    <div class="section" data-anchor="section8" id="rising">
+    <div class="section"  id="rising" data-anchor="section8">
       <section class="rising bg-white zoom-1">
         <div class="text-center mb-3">
           <h4 class="rising-title font-weight-bold wow fadeInUp">Rising Economy</h4>
@@ -860,7 +861,7 @@
         </div>
       </section><!-- rising section -->
     </div>
-    <div class="section page-section" data-anchor="section9" id="news">
+    <div class="section page-section" id="news" data-anchor="section9" >
       <section class="section-slider font-weight-bold zoom-1 ">
         <div class="container mb-6">
           <h4 class="slider-title wow slideInLeft">News</h4>
@@ -919,7 +920,7 @@
         </div>
       </section><!-- section slider -->
     </div>
-    <div class="section page-section" data-anchor="section10" id="contacts">
+    <div class="section page-section" id="contacts" data-anchor="section10" >
       <section class="contact-section zoom-1">
         <div class="container">
           <div class="d-flex justify-content-between contact-blocks">
