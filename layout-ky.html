@@ -1021,12 +1021,12 @@
             <div class="contact-section-rightside wow fadeInUp">
               <form action="#">
                 <div id="formSub">
-                  <input type="text" placeholder="Аты" required>
-                  <input type="email" name="Email" id="" placeholder="Email" required>
-                  <input type="text" placeholder="Каттын темасы" required>
-                  <textarea name="" id="" cols="30" rows="3" placeholder="Каты"></textarea>
+                  <input type="text" class="validate" placeholder="Аты" required id="nameID">
+                  <input type="email" class="validate" name="Email" placeholder="Email" required id="emailID">
+                  <input type="text" class="validate" placeholder="Каттын темасы" required id="subjectID">
+                  <textarea class="validate"cols="30" rows="3" placeholder="Каты" id="messageID"></textarea>
                   <input type="file" multiple="multiple" data-multiple-caption="{count} files selected"
-                    class="inputfile" name="file" id="file" onchange="myFunction()">
+                    class="inputfile" name="file" id="file" onchange="fileAttachment()">
                   <label for="file">
                     <div>Документти тиркөө</div>
                     <div class="file-clip"></div>

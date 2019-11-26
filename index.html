@@ -944,12 +944,12 @@
             <div class="contact-section-rightside wow fadeInUp">
               <form action="#">
                 <div id="formSub">
-                  <input type="text" placeholder="Full Name" required>
-                  <input type="email" name="Email" id="" placeholder="Email" required>
-                  <input type="text" placeholder="Subject" required>
-                  <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea>
+                  <input type="text" class="validate" placeholder="Full Name" required id="nameID">
+                  <input type="email" class="validate" name="Email"  placeholder="Email" required id="emailID">
+                  <input type="text" class="validate" placeholder="Subject" required id="subjectID">
+                  <textarea class="validate" cols="30" rows="3" placeholder="Message" required id="messageID"></textarea>
                   <input type="file" multiple="multiple" data-multiple-caption="{count} files selected"
-                    class="inputfile" name="file" id="file" onchange="myFunction()">
+                    class="inputfile" name="file" id="file" onchange="fileAttachment()">
                   <label for="file">
                     <div>Attachment</div>
                     <div class="file-clip"></div>

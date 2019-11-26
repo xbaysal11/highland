@@ -1080,10 +1080,6 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.contact-section-rightside button:focus {
-  background: var(--color-gold);
-  color: var(--color-white);
-}
 .modal-content {
   border-radius: 0 !important;
 }
@@ -1380,6 +1376,10 @@ button:focus {
 }
 #closeBtn {
   display: none;
+}
+#subBtn.active{
+  background: var(--color-gold);
+  color: var(--color-white);
 }
 .menu-wrap {
   position: relative;
@@ -1897,7 +1897,6 @@ button:focus {
 #nav{
   position: fixed;
   z-index: 3000;
-  width: 60%;
   top: 0;
   left: 50%;
   margin-left: -450px;
@@ -2105,4 +2104,8 @@ button:focus {
   opacity: 0.8;
   -webkit-transition: 1s all;
   transition: 1s all;
+}
+
+#formSub label{
+  color: #797979;
 }
