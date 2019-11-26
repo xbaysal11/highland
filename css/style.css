@@ -477,7 +477,7 @@ header {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 0;
   flex: 1 0 0;
-  max-width: 532px;
+  /* max-width: 532px; */
 }
 .inner-tab-list li {
   color: var(--dark-blue);
@@ -1381,6 +1381,10 @@ button:focus {
   background: var(--color-gold);
   color: var(--color-white);
 }
+#closeBtn:hover{
+  background: var(--color-gold);
+  color: var(--color-white);
+}
 .menu-wrap {
   position: relative;
   top: 0;
@@ -1785,7 +1789,7 @@ button:focus {
 .hc-card-link {
   color: var(--dark-blue) !important;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 24px;
   font-weight: 700;
 }
 .hc-card-number {
